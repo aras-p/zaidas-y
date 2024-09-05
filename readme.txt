@@ -33,8 +33,7 @@ Weapons:
 Console cheat commands "give_weapons" and "give_ammo" might be useful.
 
 Available maps are (open console via ~, type "map <mapname>" e.g. "map genie"):
-- zaidas_y: default level. No idea what that is based on, or what is it similar
-  to.
+- zaidas_y: default level, "kinda similar" to Quake DM6.
 - genie: very similar to Doom II "genocide.wad"
 - hifrag: very similar to Doom II "hipafrag.wad"
 - lievas: square-shaped map with "wind" feature (pushes players constantly,
