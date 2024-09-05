@@ -1,20 +1,20 @@
-****** KBL lenteló ******
+****** KBL lentelÄ— ******
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º FAILO FORMATAS º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
- üaidas-Y naudoja savo formato failus *.ZDF ( üaido-y Duomenu Failas ).
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ FAILO FORMATAS â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+ Å½aidas-Y naudoja savo formato failus *.ZDF ( Å½aido-y Duomenu Failas ).
  Juose yra: paletees, spalvu lenteles, teksturos, spraitai, ..........
  taigi jo formatas:
 
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ Failas prasideda antra÷te: ³
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Failas prasideda antraÅ¡te: â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
      0  char   id[16]         ZaidasYDataFile
-    16  int    num_lumps      blokù, esanßiù faile, kiekis
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ Tuoj pat po jo eina bloku katalogas: ³
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+    16  int    num_lumps      blokÅ³, esanÄiÅ³ faile, kiekis
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Tuoj pat po jo eina bloku katalogas: â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
     20  int    seek           bloko vieta faile
     24  int    size           bloko dydis baitais
     28  char   name[8]        bloko vardas ( <8 charus )
@@ -24,28 +24,28 @@
     44  char   name[8]        antro bloko vardas ( <8 charus )
     ........ir taip toliau visiems blokams........
 
-ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-º DUOMENø FORMATAS º
-ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ DUOMENÅ² FORMATAS â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
   visi duomenys - tai blokai (lumpai)
-ÚÄÄÄÄÄÄÄÄÄÄÄ¿
-³ TEKSTúROS ³ TEXTURS
-ÀÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ TEKSTÅªROS â”‚ TEXTURS
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - TEXTURS
-  jaigu tekstûra yra 64x64, tai ji gali bûti naudojama grindims/luboms.
+  jaigu tekstÅ«ra yra 64x64, tai ji gali bÅ«ti naudojama grindims/luboms.
   formatas:
-     0  int    num_texts      tekstûrù kiekis
+     0  int    num_texts      tekstÅ«rÅ³ kiekis
 
-     4  char   name[8]        pirmos textûros vardas ( <8 charus )
-    12  short  width          textûros plotis ( ne daugiau 256 )
-    14  byte   height         textûros auk÷tis ( ne daugiau 128 )
+     4  char   name[8]        pirmos textÅ«ros vardas ( <8 charus )
+    12  short  width          textÅ«ros plotis ( ne daugiau 256 )
+    14  byte   height         textÅ«ros aukÅ¡tis ( ne daugiau 128 )
     15  byte   iswall         1=sienoms 0=grindims
 
-    16  char   name[8]        antros tekstûros vardas ( <8 charus )
-    24  short  width          textûros plotis
-    26  short  height         textûros auk÷tis
+    16  char   name[8]        antros tekstÅ«ros vardas ( <8 charus )
+    24  short  width          textÅ«ros plotis
+    26  short  height         textÅ«ros aukÅ¡tis
     27  byte   iswall         1=sienoms 0=grindims
-    ........ir taip toliau visoms textûroms........
+    ........ir taip toliau visoms textÅ«roms........
 
   GRINDUU TXTUROS laikomos taip: pirmo stulpelio spalvos ish virshaus
   zhemyn, po to - antro, po to - trecio, t.t. ( butent stulpeliai, o
@@ -66,9 +66,9 @@
   Tokios teksturos greiciau uzkraunamos, tachiau shiek tiek daugiau uzhima
   vietos diske ( RAMe - skiek tiek mazhiau ).
 
-ÚÄÄÄÄÄÄÄÄÄÄ¿
-³ SPRAITAI ³
-ÀÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ SPRAITAI â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - SPRITES
 
   formatas:
@@ -104,30 +104,30 @@
   spraito paveiksliukas laikomas lygiai taip pat, kaip ir SIENUU
   TXTURU paveiksliukas.
 
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ DEPTH-SHADINGO LENTELò ³ COLORS
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ DEPTH-SHADINGO LENTELÄ– â”‚ COLORS
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - COLORS
-  susideda ish 34 masyvù po 256 baitus kiekvienas
+  susideda ish 34 masyvÅ³ po 256 baitus kiekvienas
   34-tas masyvas nenaudojamas
-  34 - tai skirtingù ÷viesos lygiù kiekis
-  kiekvienas masyvas - tai transformacijos lenteló, kur masyvo numeris -
-  tai ÷viesos stiprumas, indeksas - tai spalva paletóje, o masyvo elementas -
+  34 - tai skirtingÅ³ Å¡viesos lygiÅ³ kiekis
+  kiekvienas masyvas - tai transformacijos lentelÄ—, kur masyvo numeris -
+  tai Å¡viesos stiprumas, indeksas - tai spalva paletÄ—je, o masyvo elementas -
   tai kokia spalva ish viso to gaunasi
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ SPALVø PALETòS ³ PALETTE
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ SPALVÅ² PALETÄ–S â”‚ PALETTE
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - PALETTE
-  susideda ish 14 masyvù po 768 baitus kiekvienas
-  masyvas - tai R, G ir B reik÷mós kiekvienai ish 256 paletós spalvù
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ DAIKTAI LYGYJE ³ L_THING
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  susideda ish 14 masyvÅ³ po 768 baitus kiekvienas
+  masyvas - tai R, G ir B reikÅ¡mÄ—s kiekvienai ish 256 paletÄ—s spalvÅ³
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ DAIKTAI LYGYJE â”‚ L_THING
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - L_THING
-  objektui skiriama 10 baitù.
-     0  short pos_x   x koordinató
-     2  short pos_y   y koordinató
-     4  short angle   kampas ( 0-rytai 90-÷iauró 180-vakarai 270-pietûs).
+  objektui skiriama 10 baitÅ³.
+     0  short pos_x   x koordinatÄ—
+     2  short pos_y   y koordinatÄ—
+     4  short angle   kampas ( 0-rytai 90-Å¡iaurÄ— 180-vakarai 270-pietÅ«s).
      6  short type    objekto tipas
      8  short attr    atributai:
                         bit 0    1 & 2 skill level
@@ -135,11 +135,11 @@
                         bit 2    4 & 5 skill level
                         bit 3    deaf guard
                         bit 4    multi-player only (*****)
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ LYGIO LINIJOS ³ L_LINES
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ LYGIO LINIJOS â”‚ L_LINES
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - L_LINES
-  linijai skiriama 14 baitù:
+  linijai skiriama 14 baitÅ³:
      0 short vert1  pirma virsune
      2 short vert2  antra virsune
      4 short attr   atributai:
@@ -154,41 +154,41 @@
                         8  always on map  (*****)
      6 short type     linijos tipas
      8 short tag      sector tag
-    10 short rigsid   de÷iniojo SIDEDEFO numeris.
+    10 short rigsid   deÅ¡iniojo SIDEDEFO numeris.
     12 short lefsid   kairiojo  SIDEDEFO numeris. -1 jei vienpuse
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ LINIJU SHONAI ³ L_SIDES
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ LINIJU SHONAI â”‚ L_SIDES
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - L_SIDES
-  linijos ÷onui skiriami 30 baitù:
-    0 short   offs_x   tekstûros horiz. offsetas (*****)
+  linijos Å¡onui skiriami 30 baitÅ³:
+    0 short   offs_x   tekstÅ«ros horiz. offsetas (*****)
     2 short   offs_y   teksturos vert.  offsetas (*****)
     4 char[8] tex_up   upper texture
    12 char[8] tex_low  lower texture
    20 char[8] tex_full full texture
    28 short   sect     sektoriaus numeris, kuriame yra shis shonas
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ LINIJU VIRSUNES ³ L_VERTS
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ LINIJU VIRSUNES â”‚ L_VERTS
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - L_VERTS
-  vir÷ûnei skiriami 4 baitai:
-    0 short   x    x koordinató
-    2 short   y    y koordinató
-ÚÄÄÄÄÄÄÄÄÄÄÄ¿
-³ SEKTORIAI ³ L_SECTS
-ÀÄÄÄÄÄÄÄÄÄÄÄÙ
+  virÅ¡Å«nei skiriami 4 baitai:
+    0 short   x    x koordinatÄ—
+    2 short   y    y koordinatÄ—
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ SEKTORIAI â”‚ L_SECTS
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - L_SECTS
   sektoriui skiriami 26 baitai:
-    0 short   flr_hgt  grindù auk÷tis
-    2 short   ceil_hgt lubù auk÷tis
-    4 char[8] flr_tex  grindù tekstûra ( F_SKY1 = dangus )
-   12 char[8] ceil_tex lubù tekstûra
-   20 short   light    ap÷vietimas ( 0-255 )
+    0 short   flr_hgt  grindÅ³ aukÅ¡tis
+    2 short   ceil_hgt lubÅ³ aukÅ¡tis
+    4 char[8] flr_tex  grindÅ³ tekstÅ«ra ( F_SKY1 = dangus )
+   12 char[8] ceil_tex lubÅ³ tekstÅ«ra
+   20 short   light    apÅ¡vietimas ( 0-255 )
    22 short   type     sektoriaus tipas
    24 short   tag      sector tag
-ÚÄÄÄÄÄÄÄÄÄÄÄ¿
-³ SEGMENTAI ³ L_SEGMS
-ÀÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ SEGMENTAI â”‚ L_SEGMS
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - L_SEGMS
   segmentui skiriama 12 baitu:
     0 short   vert1    nuo sios virsunes
@@ -200,16 +200,16 @@
    10 short   dist     nuotolis(linijos virsune)-->(pirma segmento virsune)
                          normal==0 : linijos virsune = pirma
                          normal==1 : linijos virsune = antra
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ SUBSEKTORIAI ³ L_SSECT
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ SUBSEKTORIAI â”‚ L_SSECT
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - L_SSECT
   subsektoriui skiriami 4 baitai:
     0 short   num      segmentu kiekis subsektoriuje
     2 short   segm     pradedant nuo sito segmento
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ BSP MEDZHIO MAZGAI ³ L_NODES
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ BSP MEDZHIO MAZGAI â”‚ L_NODES
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - L_NODES
   mazgui skiriama 28 baitai:
     0 short   x        pradine skyrimo linijos x koordinate
@@ -230,9 +230,9 @@
    26 short   nodelef  kaires shakos arba lapo numeris:
                          bit15==1 : kaireje yra subsektorius (lapas)
                          bit15==0 : kaireje yra node (shaka)
-ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
-³ BLOKINIS ZHEMELAPIS ³ L_BLMAP
-ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ BLOKINIS ZHEMELAPIS â”‚ L_BLMAP
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   bloko vardas - L_BLMAP
   zhemelapio sandara:
 
@@ -241,15 +241,15 @@
     4 short   num_x    horiz. bloku kiekis ( matricos plotis )
     6 short   num_y    vert. bloku kiekis ( matricos aukstis )
 
-    8 short   offs0    sme÷ßenyje bloka 0 ot naßiala BLMAP
-   10 short   offs1    sme÷ßenyje bloka 1 ot naßiala BLMAP
-   12 short   offs2    sme÷ßenyje bloka 2 ot naßiala BLMAP
+    8 short   offs0    smeÅ¡Äenyje bloka 0 ot naÄiala BLMAP
+   10 short   offs1    smeÅ¡Äenyje bloka 1 ot naÄiala BLMAP
+   12 short   offs2    smeÅ¡Äenyje bloka 2 ot naÄiala BLMAP
    .....
-   tada eina sİra÷ai visiems blokams. sİra÷o formatas:
+   tada eina sÄ…raÅ¡ai visiems blokams. sÄ…raÅ¡o formatas:
 
      0 ; line1 ; line2 ; line3 ; ... ; lineN ; 0 ; -1
 
-   pvz: bloke yra nulinó, treßia ir penkiolikta linijos:
+   pvz: bloke yra nulinÄ—, treÄia ir penkiolikta linijos:
      0;0;3;15;0;-1
 
 
