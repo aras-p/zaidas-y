@@ -95,7 +95,6 @@ VI. KAS TURI BUTI ZHAIDO-Y PAKETE ?
     main.exe     - pagrindinis egzekas
     ipxrun.exe   - paleidimo programa ipx tinklui
     aras         - shitas nebutinai turi buti. chia mano zhaido-y konfigas.
-    test.!!!     - nebutinai, duomenys apie optimizavima.
     autoexec.cfg - klavishu ir dar ko nori konfiguracijos byla
     default.cfg  - konoles kintamuju ishsaugojimo byla
     bugai.txt    - zhinomu bugu sarashas
