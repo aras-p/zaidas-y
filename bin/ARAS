@@ -1,0 +1,96 @@
+//ARO KONFIGAS
+con_height "100"
+con_speed "100"
+con_msgtime "175"
+noflats "1"
+nowalls "1"
+weaponcheat "0"
+lookcheat "1"
+playerbot "0"
+showfps "1"
+messages "1"
+gamma "2"
+deathmatch "3"
+m_pitch "-0.016"
+use_mouse "1"
+sensitivity "20"
+bobweapon "0"
+bobview "0"
+drawweapon "0"
+// soundas
+stereoreverse "0"
+numchannels "4"
+soundvolume "15"
+
+alias rloodas "impulse 10; +attack; wait; -attack; impulse 1"
+alias groodas "impulse 10; +attack; wait; -attack; impulse 0"
+alias shoodas "impulse 10; +attack; wait; -attack; impulse 6"
+
+alias +stl +moveleft
+alias -stl -moveleft
+alias +str +moveright
+alias -str -moveright
+alias +vwtrn "alias +stl viewleft; alias +str viewright"
+alias -vwtrn "alias +stl moveleft; alias +str moveright; viewnull"
+
+# BINDAI
+unbindall
+bind mouse2 +forward
+bind mouse1 +attack
+bind x +backward
+bind z +stl
+bind c +str
+bind shift +vwtrn
+bind alt +jump
+bind space +use
+bind tab +showstats
+bind f10 quit
+
+# ginklai
+bind 1 impulse 10
+bind 3 impulse 6
+bind 4 impulse 5
+bind 5 impulse 0
+bind t impulse 4
+bind 6 impulse 1
+bind y impulse 2
+bind h impulse 3
+bind 7 impulse 7
+bind u impulse 9
+bind 8 impulse 8
+bind f impulse 1
+bind d impulse 0
+bind s impulse 6
+bind g impulse 7
+bind v impulse 8
+//bind r rloodas
+//bind e groodas
+//bind w shoodas
+
+# texturoms
+alias texon "nowalls 0; noflats 0"
+alias texoff "nowalls 1; noflats 1"
+bind [ texon
+bind ] texoff
+
+alias +vwrear "viewangle 180"
+alias -vwrear "viewnull"
+bind a +vwrear
+
+// rjumpas. jis tik shauna ir reikiamu momentu shoka. rakietas isijungti
+// ir zhemyn zhiureti pac turi. geriausia zhiureti l.zhemai, bet galima
+// ir kiek kitaip.
+alias rj7 "+attack; wait 7; -attack; +jump; wait; -jump"
+bind ctrl rj7
+
+alias jumpfire "+jump; wait 13; -jump; +attack; wait; -attack"
+bind q jumpfire
+
+alias jumpfire2 "+jump; +attack; wait; -jump; -attack"
+bind w jumpfire2
+
+
+//alias grj18 "impulse 0; +attack; +forward; wait; -attack; wait 19; -forward; wait 70; +jump; wait; -jump"
+//alias dgrj18 "impulse 0; +attack; wait 23; -attack; +forward; wait 20; -forward; wait 46; +jump; wait; -jump"
+//alias dgrj18 "impulse 0; +attack; wait 23; -attack; +forward; wait 20; -forward;"
+//bind f1 dgrj18

@@ -1,0 +1,34 @@
+
+ZHINOMI ZHAIDO-Y BUGAI:  ++ = bandau taisyti shiuo metu
+                         ?? = lygtais ishtaisiau
+                         __ = frrrozen tas fycheras, kur sukelia buga.
+
+  stabiliai neveikia kintamasis stereoreverse - pasilieka taip pat.
+
+  kazhkodel lava botus veikia zhymiai smarkiau. gal ten jie po l. mazhai
+  shokineja, ar ka? nu bet taip jiems ir reikia :)
+
+  taip ish eiles keichiant mapa koki 100 kartu, uzhluzhta. nezhinau kodel.
+  memoriaus tai ne kiek nepraranda gi.
+
+? zhaidzhiant tinkle arba su botais, kartais po nushovimo zhogelis ne
+? nugriuva, o pasilieka tokioj pat padety, pereinamas kiaurai, ir neaishku,
+? kuris chia gyvas, kuris ne.
+
+? zhaidzhiant su botais, po dosu kartais pakimba, o po sux95 ishmeta
+? standartini "program has performed illegal...". gal che kaltas kodas su
+? matomumo tikrinimu (jis niekur kitur nenaudojamas).
+
+_ kazkas su vandeniu negeruaj. kartais nuluzhta su pmodew erroru arba po
+_ sux95 sako "divide by zero press enter to return to norton com." ir/arba
+_ persikrauna. itariu, kad fix_div buna ish nulio, kai arti vandens akys.
+
+kartais shoviniai uzhsibaigia ties -1 ar -2
+
+apachioje teksturu kartais ishlenda teksturos virshus arba pilki
+tashkai.
+
+GSM: shotguno spraita viena karta mate su shviesia linija ish virshaus.
+dar syki taip padaryti neishejo. ARAZ: jo, shita buga pamachew. l.l.retai.
+kai nori ji pamatyti, neisheina. kai nenori, kartais pasimato. ne tik
+shotgunui, bet ir kitiems spraitams.

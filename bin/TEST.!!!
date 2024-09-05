@@ -1,0 +1,66 @@
+OPTIMIZACIJU HISTORIUS. NUO 1999.05.
+testuota su spec. programa, skaichiukai - kiek f-ju speja ivykti per
+3 sekundes.
+
+99.05.06. draw_wall_column - 200 aukshchio stulpelis.
+    buvo apie 16900
+        su nopu pagr. cikle - apie 16100
+        be vieno cacho hito pagr. cikle 17750. wau!
+        su shifto optimizacija - 17850.
+        su push ir pop - 15600. nejeega
+        su ebp panaudojimu - net 19900 !!!
+    taigi pagreitinau 17.7%
+
+99.05.07. draw_flat_span - 320 ilgio eilute.
+    buvo apie 7910
+        su ds_source i ebp - 8200. vieno cache misso nera.
+        su shiftu ir andu preoptimizacijomis - net 9300 ! bet tada shiek tiek
+           ishkraipo texturas. bet 17.5% pagreitejimo akiu nebado.
+        nuimta viena ish 2 shr ir and optim. - 8540. ka gi. bet texturas
+           paisho gerai.
+        dar gudriau vietos texturoje skaichiavima pertvarkiau - 9270. bet
+           paisho l.bugovai.
+        wow! net 9760 per sekundee! che per lietuviu pamoka sugalvojau kaip
+           optimizuoti - du fixed'us i viena 32 bitu registra, kiti zoviesai
+           ir groodai.
+    taigi pagreitinau 23.4%
+
+99.05.24. draw_patch - textura WINDW2 - kabantys pilki kvadrateliai genocide.
+    buvo apie 2941
+        bet che c'sinis....
+        perrashiau asm'u: luzhta. taisau: luzhta.
+        ishtaisiau: 4833 net! bet paisho bugovai ir luzhta kartais.
+        taisau: 4860. veikia geraj.
+        soptimizavau - neliko 2 push ir 2 pop: 5013
+    taigi pagreitinau 70.5% hjegha!
+
+99.05.27. draw_wall_column - toliau optimizuoju
+    pradzhioje buvo 16900. po to 19900.
+        golova, tu golova! taigi pushad ir ebp ipushina! taigi tada 20104
+        knygoje duotas pavyzdys, kaip viename cikle 2 pixelius daro. darysiu
+           ne 2, o keturis - vis greichiau gal bus. darau.
+        darau.
+        padariau! taigi 21937 ! va taj deela.
+        dar c'siui nurodzhiau su #pragma, kad f-ja jokiu registru nekeichia,
+           tai 22243 net patapo.
+    taigi pagreitinau 31.6% nuo pradinio arba 11.8% nuo ankstesnio. neblogai.
+
+99.05.27. draw_wall_column_2 - 200 aukshchio stulpelis.
+    buvo 22887. keista. ne ka daugiau, nei draw_wall_column.
+        kelios smulkios optimizacijos: vieno shl ir vieno memoriaus
+           keripimosi. taigi 22932. nekiek.
+        darau irgi po 4 pixelius ish karto. 23146
+    taigi pagreitinau 1.1% l.daug.
+
+99.05.27. init_plane_table - paprastai kviesti
+    buvo 3980.
+        padariau ne cikliukus inicializacijai, o asm'u rep stosd ir jau 6709!
+           o f-ja vistik uzhimdavo apie 0.5% viso laiko...
+    taigi pagreitinau 68.6% neblogai visai.
+
+99.05.27. draw_flat_span - toliau optimizuoju
+    pradzhioje buvo 7910. po to 9760.
+        darau po 2 pixelius vienam cikle - gal apsimokes ?
+        veikia! net 13361! o che tai bajeris... naudojau visokius dalykus,
+           kaip tiesiogini kodo modifikavima, nes kitaip truxta registru.
+    taigi pagreitinau 68.9% nuo pradinio arba 36.9% nuo ankstesnio. geraj!

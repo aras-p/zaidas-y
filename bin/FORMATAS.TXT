@@ -1,0 +1,255 @@
+****** KBL lenteló ******
+
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º FAILO FORMATAS º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+ üaidas-Y naudoja savo formato failus *.ZDF ( üaido-y Duomenu Failas ).
+ Juose yra: paletees, spalvu lenteles, teksturos, spraitai, ..........
+ taigi jo formatas:
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Failas prasideda antra÷te: ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+     0  char   id[16]         ZaidasYDataFile
+    16  int    num_lumps      blokù, esanßiù faile, kiekis
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Tuoj pat po jo eina bloku katalogas: ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+    20  int    seek           bloko vieta faile
+    24  int    size           bloko dydis baitais
+    28  char   name[8]        bloko vardas ( <8 charus )
+
+    36  int    seek           antro bloko vieta faile
+    40  int    size           antro bloko dydis baitais
+    44  char   name[8]        antro bloko vardas ( <8 charus )
+    ........ir taip toliau visiems blokams........
+
+ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+º DUOMENø FORMATAS º
+ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+  visi duomenys - tai blokai (lumpai)
+ÚÄÄÄÄÄÄÄÄÄÄÄ¿
+³ TEKSTúROS ³ TEXTURS
+ÀÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - TEXTURS
+  jaigu tekstûra yra 64x64, tai ji gali bûti naudojama grindims/luboms.
+  formatas:
+     0  int    num_texts      tekstûrù kiekis
+
+     4  char   name[8]        pirmos textûros vardas ( <8 charus )
+    12  short  width          textûros plotis ( ne daugiau 256 )
+    14  byte   height         textûros auk÷tis ( ne daugiau 128 )
+    15  byte   iswall         1=sienoms 0=grindims
+
+    16  char   name[8]        antros tekstûros vardas ( <8 charus )
+    24  short  width          textûros plotis
+    26  short  height         textûros auk÷tis
+    27  byte   iswall         1=sienoms 0=grindims
+    ........ir taip toliau visoms textûroms........
+
+  GRINDUU TXTUROS laikomos taip: pirmo stulpelio spalvos ish virshaus
+  zhemyn, po to - antro, po to - trecio, t.t. ( butent stulpeliai, o
+  ne eilutes, kaip bitmapuose ).
+
+  SIENUU TXTUROS laikomos taip: priesh visa dataa eina <width> shortu,
+  kurie indikuoja stulpelio datos offseta nuo visos teksturos datos pradzios.
+  data laikoma irgi pirma pirmas stulpelis, po to antras, tik
+  kiek kitaip. kiekviena stulpeli sudaro nepermatomu pixeliu stulpeliukai -
+  postai (posts). posto aprashyma sudaro:
+     0  byte   topdelta  atstumas pixeliais nuo viso stulpelio virshaus
+     1  byte   len       poste esanciu pixeliu kiekis
+     2  <len>  data      <len> posto pixeliu
+  paskutinis stulpelio postas:
+     topdelta=-1;
+     len=0;
+     datos nera.
+  Tokios teksturos greiciau uzkraunamos, tachiau shiek tiek daugiau uzhima
+  vietos diske ( RAMe - skiek tiek mazhiau ).
+
+ÚÄÄÄÄÄÄÄÄÄÄ¿
+³ SPRAITAI ³
+ÀÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - SPRITES
+
+  formatas:
+     0  int    num_sprites  bendras spraitu kadru kiekis
+
+     4  char   name[8];     shito kadro paveikslelio bloko vardas (gudru!)
+    12  short  width;       kadro plotis pixeliais
+    14  short  height;      kadro aushtis pixeliais
+    16  short  left_offs;   origino atstumas nuo kairiojo krashto
+    18  short  top_offs;    origino atstumas nuo desiniojo krashto
+    20  short  spritenum;   spraito, kuriam priklauso shis kadras, numeris
+    22  byte   frame[2];    kadro numeris spraite, kur antrasis elementas
+                            nurodo mirorinto kadro numeri tame paciame
+                            spraite. jeigu kadras mirorintas nenaudojamas,
+                            tai frame[1]==255
+    24  byte   rotation[2]; ish kurios puses zhiurint i shita, matomas shitas
+                            kadras. antrasis elementas - ish kurios puses
+                            matomas mirorintas kadras. jei mirorinto nera,
+                            tai 255. jei spraitas ish visu pusiu vienodas,
+                            tai abu rotation==0. puses yra tokios:
+                              1 - matome prieki
+                              2 - matome prieki ir k shona
+                              3 - matome k shona
+                              4 - uzpakali (subine) ir k shona
+                              5 - uzpakali
+                              6 - uzpakali ir d
+                              7 - d
+                              8 - prieki ir d
+                            t.y. sukamas objektas PAGAL l.rodykle
+
+    ........ir taip toliau visiems spraitu kadrams........
+
+  spraito paveiksliukas laikomas lygiai taip pat, kaip ir SIENUU
+  TXTURU paveiksliukas.
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ DEPTH-SHADINGO LENTELò ³ COLORS
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - COLORS
+  susideda ish 34 masyvù po 256 baitus kiekvienas
+  34-tas masyvas nenaudojamas
+  34 - tai skirtingù ÷viesos lygiù kiekis
+  kiekvienas masyvas - tai transformacijos lenteló, kur masyvo numeris -
+  tai ÷viesos stiprumas, indeksas - tai spalva paletóje, o masyvo elementas -
+  tai kokia spalva ish viso to gaunasi
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ SPALVø PALETòS ³ PALETTE
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - PALETTE
+  susideda ish 14 masyvù po 768 baitus kiekvienas
+  masyvas - tai R, G ir B reik÷mós kiekvienai ish 256 paletós spalvù
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ DAIKTAI LYGYJE ³ L_THING
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - L_THING
+  objektui skiriama 10 baitù.
+     0  short pos_x   x koordinató
+     2  short pos_y   y koordinató
+     4  short angle   kampas ( 0-rytai 90-÷iauró 180-vakarai 270-pietûs).
+     6  short type    objekto tipas
+     8  short attr    atributai:
+                        bit 0    1 & 2 skill level
+                        bit 1    3 skill level
+                        bit 2    4 & 5 skill level
+                        bit 3    deaf guard
+                        bit 4    multi-player only (*****)
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ LYGIO LINIJOS ³ L_LINES
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - L_LINES
+  linijai skiriama 14 baitù:
+     0 short vert1  pirma virsune
+     2 short vert2  antra virsune
+     4 short attr   atributai:
+                        0  impassable
+                        1  stop monsters
+                        2  two sided
+                        3  upper unpegged
+                        4  lower unpegged
+                        5  secret
+                        6  blocks sound
+                        7  never on map   (*****)
+                        8  always on map  (*****)
+     6 short type     linijos tipas
+     8 short tag      sector tag
+    10 short rigsid   de÷iniojo SIDEDEFO numeris.
+    12 short lefsid   kairiojo  SIDEDEFO numeris. -1 jei vienpuse
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ LINIJU SHONAI ³ L_SIDES
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - L_SIDES
+  linijos ÷onui skiriami 30 baitù:
+    0 short   offs_x   tekstûros horiz. offsetas (*****)
+    2 short   offs_y   teksturos vert.  offsetas (*****)
+    4 char[8] tex_up   upper texture
+   12 char[8] tex_low  lower texture
+   20 char[8] tex_full full texture
+   28 short   sect     sektoriaus numeris, kuriame yra shis shonas
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ LINIJU VIRSUNES ³ L_VERTS
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - L_VERTS
+  vir÷ûnei skiriami 4 baitai:
+    0 short   x    x koordinató
+    2 short   y    y koordinató
+ÚÄÄÄÄÄÄÄÄÄÄÄ¿
+³ SEKTORIAI ³ L_SECTS
+ÀÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - L_SECTS
+  sektoriui skiriami 26 baitai:
+    0 short   flr_hgt  grindù auk÷tis
+    2 short   ceil_hgt lubù auk÷tis
+    4 char[8] flr_tex  grindù tekstûra ( F_SKY1 = dangus )
+   12 char[8] ceil_tex lubù tekstûra
+   20 short   light    ap÷vietimas ( 0-255 )
+   22 short   type     sektoriaus tipas
+   24 short   tag      sector tag
+ÚÄÄÄÄÄÄÄÄÄÄÄ¿
+³ SEGMENTAI ³ L_SEGMS
+ÀÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - L_SEGMS
+  segmentui skiriama 12 baitu:
+    0 short   vert1    nuo sios virsunes
+    2 short   vert2    iki sios virsunes
+    4 short   angle    kampas ( 0=EAST 16384=NORTH 32768=WEST 49152=SOUTH )
+    6 short   line     sito segmento linijos numeris
+    8 short   normal   0=ant desines linijos puses ( ta pati kryptis kaip linijos )
+                       1=ant kaires linijos puses ( priesinga kryptis kaip linijos )
+   10 short   dist     nuotolis(linijos virsune)-->(pirma segmento virsune)
+                         normal==0 : linijos virsune = pirma
+                         normal==1 : linijos virsune = antra
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ SUBSEKTORIAI ³ L_SSECT
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - L_SSECT
+  subsektoriui skiriami 4 baitai:
+    0 short   num      segmentu kiekis subsektoriuje
+    2 short   segm     pradedant nuo sito segmento
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ BSP MEDZHIO MAZGAI ³ L_NODES
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - L_NODES
+  mazgui skiriama 28 baitai:
+    0 short   x        pradine skyrimo linijos x koordinate
+    2 short   y        --"--                   y koordinate
+    4 short   dx       xgalines-xpradines
+    6 short   dy       ygalines-ypradines
+    8 short   rig_maxy desinio  dalinamo ploto virsutine Y koordinate
+   10 short   rig_miny desinio  dalinamo ploto zemutine  Y koordinate
+   12 short   rig_minx desinio  dalinamo ploto kairioji  X koordinate
+   14 short   rig_maxx desinio  dalinamo ploto desinioji X koordinate
+   16 short   lef_maxy kairiojo dalinamo ploto virsutine Y koordinate
+   18 short   lef_miny kairiojo dalinamo ploto zemutine  Y koordinate
+   20 short   lef_minx kairiojo dalinamo ploto kairioji  X koordinate
+   22 short   lef_maxx kairiojo dalinamo ploto desinioji X koordinate
+   24 short   noderig  desines shakos arba lapo numeris:
+                         bit15==1 : desineje yra subsektorius (lapas)
+                         bit15==0 : desineje yra node (shaka)
+   26 short   nodelef  kaires shakos arba lapo numeris:
+                         bit15==1 : kaireje yra subsektorius (lapas)
+                         bit15==0 : kaireje yra node (shaka)
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ BLOKINIS ZHEMELAPIS ³ L_BLMAP
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  bloko vardas - L_BLMAP
+  zhemelapio sandara:
+
+    0 short   beg_x    bloku grido kairiojo zhemutinio kampo x koord.
+    2 short   beg_y    bloku grido kairiojo zhemutinio kampo y koord.
+    4 short   num_x    horiz. bloku kiekis ( matricos plotis )
+    6 short   num_y    vert. bloku kiekis ( matricos aukstis )
+
+    8 short   offs0    sme÷ßenyje bloka 0 ot naßiala BLMAP
+   10 short   offs1    sme÷ßenyje bloka 1 ot naßiala BLMAP
+   12 short   offs2    sme÷ßenyje bloka 2 ot naßiala BLMAP
+   .....
+   tada eina sİra÷ai visiems blokams. sİra÷o formatas:
+
+     0 ; line1 ; line2 ; line3 ; ... ; lineN ; 0 ; -1
+
+   pvz: bloke yra nulinó, treßia ir penkiolikta linijos:
+     0;0;3;15;0;-1
+
+

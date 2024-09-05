@@ -1,0 +1,953 @@
+                          ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                          ³ ZHAIDO-Y RELYZAI ÆÍ»
+                          ÀÄÒÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ º
+                            ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+                                                 -= dareh ARAZ =-
+ka reikia padaryti:
+* padaryti normalius garsus, o ne ish kveiko
+* daryti normalius botus
+* taisyti bugus :(
+* DAUG optimizuoti...
+//* midai kaip muzika
+//* ish esmes pertvarkyti netvorkaa. ish pradzhiu paprastas client/server.
+//    klientai siunchia servui, servas klientams viska ishsiunchia kaip
+//    viena paketa. turetu buti greichiau. o gal lechiau.
+//* simple predictionas: jei klientas veluoja atsiusti data, servas uzh ji
+//    daro sprendimus (tarkim, palieka move ir turn tokius pachius, o
+//    kitkaa numusha).
+//* open geimas - prisijungi kada nori
+//* smulkmenos: name, color, say, kick(servui), t.t.
+//* tcp/ip. ???. ar ne per daug, aras, nori? che problema - tarkim, dabar
+//    zhaidas y teorishkai tureti begti ir susijungus per serial porta -
+//    sersetup. o tada? ar pasirashyti tcpipsetup.exe ?
+
+40*** 99.06.22 *****         801 754                             ( 190 071 )
+  nu va. mokykla baigeu, sorsas per 800000 persirito, ko dar noreti ?
+  mintiju, kad zhaida-y reikia uzhbaigti. su tais dll'ais taj bishki nesamone.
+  tarkim, dabar parashiau dlla, kuris daro naudinga dela - virshutiniame
+  deshiniajame ekrano kampe paisho, kiek kuris zhaidejas turi sveikatos.
+  bet tai galima pasirashyti, kad ir rodytu, su kokiu jis ginklu, kiek shoviniu
+  turi ir t.t. fajnej, ane? va, ir armora visu rodo...
+
+***** 99.06.17 *****         773 349                             (         )
+  DLLai po dosu irgi veikia! tai dabar yra vienas pluginas plugin_1.dll .
+  jis kolkas nieko doro nedaro (veliau bus sazhines balsas), tik karts nuo
+  karto groja randominius garsus arba supaisho dar viena status bara ekrano
+  virshuje.
+
+39*** 99.06.14 *****         763 913                             ( 186 693 )
+  kaip dariau: pazhiurejau, kad kveike i pak0.pak wavai yra tiesiai sumesti,
+  be jokio encodinimo. tai padariau programele, kuri ieshko RIFF ir WAVE
+  raidzhiu ir suradusi ishtraukia wava. tai gavau 155 garsus. nu ka - garsu
+  yra. atmetus nereikalingus, liko 48. ale uzhima jie 565 kb. ka daryt?
+  nu va. yra jau 27 garsai, veik viskas igarsinta, zhaidas-y be aro
+  konfigo ir test.!!! dar telpa i diskeli. reguliuoju antrus botus,
+  idejau ju debugo parametra "botdebug", tai jie sako, ka daro ir ko nori.
+  jau jie, man rodos, kietesni uzh pirmus botus.
+
+38*** 99.06.13 *****         756 628                             ( 186 166 )
+  pradejau soundo koda integruoti i zaida-y. prie sorso dyzhio tai pridejau,
+  nors tie 82 kb ir ne mano rashyti yra, tik suportinti. o! sorsas per
+  700 kb persirito! darau toliau. ishkilo klausimas: ar daryti doplerio
+  efekta, t.y. dazhnio pasikeitima priklausomai nuo grichio? a?
+  garsas veikia! tiesa, kartais (dazhnai) nuluzhta - lyg amzhinas ciklas.
+  ne amzhinas ciklas buvo, o reentrant interuptas ir dar data.c keli
+  laukai vietomis sumaishyti.
+
+***** 99.06.12 *****                                             (         )
+  jau saundo ir midi korta sudetektina teisingai, wavus uzhkrauna, bet
+  pradejus groti luzhta kazhkodel. jee! jau groja viena wava! nezhinau,
+  ar mixina, ar ne, groja per garsiai ir dzherzhgia baisiai, bet groja!
+  woohoo? ir midus groja? kaip che dabar? aishku, nothing_else_matters.mid
+  groja labai neatpazhistamai - kazhkaip susivarto zhiauriai, bet girdisi
+  midi instrumentai, o ne triukshmas bent jau.
+
+***** 99.06.11 *****                                             (         )
+  oops... rytoj fizikos egzas... suprast tai suprantu viska, ale formuliu ir
+  kitokio shlamshto neacimenu. negeruaj nusimato...
+
+***** 99.06.09 *****         656 261                             (         )
+  blia, tas garsas tai garsus yra... nesamone kazhkokia, stabdis, zoviesas ir
+  kiti biesai... pradeda uzhknisti... stabiliai suportinau apie 200 kb
+  sorso, ir jau kompiliuoja... aishku neveikia, nulauzhia kompa arba
+  pradeda kolonkes pleshyti. aj, padariau toki sektoriu tipa kaipo "liadas",
+  t.y. jame taip lievai slidineji visaip. todel reikia nupieshti dar ir ledo
+  textura, ir bus galima ice lygi daryti... nebuvo sunku padaryti ta leda...
+
+***** 99.06.07 *****                                             (         )
+  darau garso ir muzikos palaikymaa. paremta Allegro bus, va. nuportinsiu
+  ant vatkomo. kadangi ash sound'e zhalias, tai pirma reikia viska ishsi-
+  aishkinti. darbo kokiom 2 savaitem...   ...    .... ...... . .. .   ...
+
+37*** 99.06.06 *****         655 692                             ( 171 897 )
+  botai aceit bando rinktis itemus, begti nuo shoviniu skraidanchiu, dar
+  visaip gudriai daryti. bet gaunasi tai shnipshtas. kad butu greichiau, tai
+  jis ne kiekviena takta vengia shoviniu ir visada tik vieno vengia, taigi
+  kartais ir pataikai. be to, jei jis yra ore, tai ishvengti nelabai gali.
+
+***** 99.06.05 *****         646 875                             (         )
+  nieko doro neveikiau, tik irashiau TuLivIzTuDaj su Rastianiu. va. geraj.
+  antri botai geriau predictiona daro, jau ir begioja, ne tik shtrafuoja.
+  darau kad jis jau kaip nors atsizhvelgtu i shalimais esanchius daiktus
+  (susirinktu arba reektuu ir begtuu arba sakytuu px).
+
+***** 99.06.04 *****         642 389                             ( 169 609 )
+  antro AI botai daro predictiona, ar bent jau bando shaudyti ne ten, kur
+  tu esi, o ten, kur tu boosi reikiamu metu. kvailokai gaunasi, bet geriau
+  nei nieko.
+
+***** 99.05.30 *****         640 852   oho! apie 19000 eiluchiu! (         )
+  dadejau kintamaji "bot_ai", kuris gali buti lygus 1 arba 2. 1 = originalus
+  botu AI, t.y. randomas, 2 = kolkas botai nieko nedaro, bet padarysiu ka
+  nors gudresnio. jau darau. botai protingiau ishsirenka tinkama ginkla,
+  visada pasireguliuoja mlooka iki taikinio, geriau strafuoja while in
+  fight. bet kitko dar nedaro. kovoti pradeda tik tada, jei tu juos
+  suzheidi. o! jau patys tave pamato. ish raketu bando shaudyti i grindis
+  po tavim.
+
+***** 99.05.29 *****         631 624                             (         )
+  jau veikia buvimo spec. sektoriuose tikrinimas! taigi lava jau daro savo
+  deelaa. va. dar padariau tokius sprindzhynus kaip QuakeIII (!), kur
+  ishmeta aukshtyn i ora, buuk tai nemokamas roketjumpas, tik neskaudzhiai.
+  tai ta lieva mapa ir upgradinau. kuokos damaga sumazhinau - dabar tik
+  6 kulipkas duoda, o ne 9. pagalvojau, o gal padaryti su pluginais? a?
+  kaip bootoo? kaip Quake2 skriptai - i dll'us ? ainu miegot.
+
+***** 99.05.28 *****                                             (         )
+  bandzhiau daryti mipscale, bet nesigavo, tai kintamuju mipwall ir mipflat
+  geriau nekaitalioti. galima tarkim mipwall 1, bet tada l.idomiai gaunasi.
+
+***** 99.05.27 *****         628 343                             ( 166 867 )
+  optimizavau, daugiausia asm'o funkcijas. jega. kazhkada pachio pieshimo
+  ir blitinimo f-jos uzhimdavo apie 80% viso laiko. dabar jos tedaro 47%,
+  o fps'u tai daugiau... kazhkada fpsai budavo 13.8 - dabar ten pat
+  tokiom pat salygom jie yra 23.8 - tai shiek tiek daugiau. mesos shiek
+  tiek kitaip lekia, kas sudaro menishkesni ir estetishkesni vaizda. paemus
+  kupriaka, i ten turima ginkla jungia tik tada, jei jis geresnis ir jei
+  tu jam shoviniu neturi.
+
+***** 99.05.26 *****                                             (         )
+  naujas mapas - hifrag.zdf jau yra! jis palyginus mazhas, tai tinka zhaisti
+  su nedaug zhaideju. va. pastebekit - pamatysit. nu ka daugiau ash galiu
+  pasakyti... yra slauniosios bobelees jame! ten galima uzsirjumpinti.
+  shiaip mapa ne pac sugalvojau, o paemiau hipafrag.wad
+
+***** 99.05.25 *****                                             (         )
+  o egzas tai savivartis... bandzheu visokius rakietdzhampus. su spreadu
+  kai turi 200 armoro, nuima 80 healtho, bet shoka net per aukshtai.
+  su buza tai normaliau - ish zyquad tako apachioje galima tiesiai
+  ant tako i 200 armoro uzhshokti, nuima su 200 armoro tik apie 50, bet
+  buza nera l.patikimas ginklas - viena syki taip shauna, kita kitaip.
+  dar su granatom visaip bandzheu - su viena granata, su dviem, bet
+  nieko doro nesigauna.
+
+36*** 99.05.24 *****         622 175                             ( 166 302 )
+  tai va nieko nedarau tik ruoshiu infokownui ta zhaida-y. berods ryt
+  anglu egzas... aj bet nieko. supaisheu keleta txturu, patvarkiau lygius,
+  etc. optimizazau. jee, beveik ishmokau roketjampus daryti. reikia zhiureti
+  kiek galima zhemyn ir butinai begti i prieki. shauti roketa ir po trumpo
+  laiko (geriausia po 7 tiku, t.y. 0.2 sekundes) shokti. kol roketa
+  nuskrenda, tu nubegi i ta vieta ir buni optimaliai pakiles. taip zyquad
+  leveliuje net ish lavos galima prie plazmos uzhsh*kti. be sharvu apie 80%
+  liuosumo nuema. geraj, neshu Lauriui. neveikia po suxais. o! jau veikia!
+  suxai yra veikluus bichai. jo.
+
+***** 99.05.23 *****         619 579                             (         )
+  taisau ta gis kad kraujant lygi kazhkur prapuola apie 3 kb memoriaus. taigi
+  to neturetu buti, che ne vindozai kokie kad prapuldinetu. o! reject'o
+  neatlaisvindavo. tai 2 kb dar prapuola. o! ir blmap_dat nelaisvindavo!
+  taigi viskas gerai. jau ne taip kaip kartais budavo - granatos nebeina
+  kiaurai zhmogu. oops... netyche ishtryniau visus *.c ir *.h failus...
+  ajajaj... bet unerasinau dauguma, tik r_bsp.c ir df_thing.c nepavyko.
+  reikes imti ish senu relyzu... ajajaj... bet taigi statsus rahsho!
+  komanda +showstats va. atrodo tai nekaip, bet vistiek. r_bsp.c lygtai
+  pats sutvarkiau.
+
+35*** 99.05.22 *****         614 832                             (         )
+  viskas del geerio... tai del to status bare visaip advanced paisho
+  skaichiukus - armoro spalvos, healtho jei mazhai tai raudonai, t.t.
+  dar padariau shita gi kad negalima ginklo perjungti, kol anas shauti
+  nebaige, bo priesh tai buvo galima padaryti l.greita shaudyma ish
+  dvivambzdzhiaus - shauni, pakeiti i kuoka, atkeiti ir vel gali shauti. wo.
+  dar kazhka dariau, bet nepamenu. o! kupriakus palieka visi bjaurushai!
+  galima ishjungti ginklo paishyma - drawweapon kintamasis. specialiai
+  Paoliekiui. o ir veikia bishki greichiau ishjungus. pareguliavau ginklu
+  shovimo greichius. dm6 mapa padariau ne su kvailom linijom, o su toopais
+  daiktais, tai veikia greichew ir uzhima mazhiau 14 kb. kai paimi koki
+  nors blogesni ginkla, tai i ji neperjungia, kad obydos nebutu.
+
+***** 99.05.21 *****         610 874                             ( 163 716 )
+  ojojoj, taigi darau visus ten shitus gi kaip tenais tie juk... a, taigi
+  status bare paisho turimus ginklus ir ijungta ginkla! ale jau lievai
+  kaip... bet viena beda ne beda.
+
+***** 99.05.20 *****         610 052                             (         )
+  pakaitaliojau gravitacija, raketoms irgi naujus dumus uzhdejau. granatos
+  jau, mano manymu, geros. supaisheu su 3ds nauja status bara - gal ir
+  geriau. tai jau spraunumas... ta proga, kad picos su jalapeno valgeu.
+  galima ishjungti ginklo bei saves visaip davimasi vaikshtant - kintamieji
+  bobview ir bobweapon.
+
+***** 99.05.18 *****         609 515                             (         )
+  lygtai ishtaisiau bugus su valdymu. dabar kaip kveike - galima taip
+  pribindinti, kad jis eiti pradetu, o atleidus nenustotuu. taisiau granatas,
+  supaishiau joms naujus dumus, shiaip dalykus. dar kazhka tvarkiau. aj,
+  botus taigi. dabar jie kaip normalus zhaidejai - jei eina pirmyn ar
+  atgal, tai jau ir eina, o ne eina kiek nori (gal normaliai, gal bishki).
+  pakeichiau gravitacija - padidinau 2x, pashokima padidinau, ivedzhiau
+  daiktu flaga TA_LOWGRAV (mazhesne grav. kraujaliuj).
+
+***** 99.05.13 *****         608 441                             ( 163 413 )
+  lygtai granatas sutvarkiau. nu jos kartais dar per tuos nematomus
+  solidzhius daiktus pereina, bet tai nieko :)
+
+***** 99.05.12 *****                                             (         )
+  na va, lygis jau kaip ir padarytas, dar tik texturas reikia sudelioti, bo
+  kolkas tai visur vienodos. pareguliavau granatu atshokinejimus.
+
+***** 99.05.11 *****                                             (         )
+  taigi dariau lygi nauja. parashiau doca apie konsole - visus kintamuosius,
+  komandas, zoviesus - 'konsole.txt'
+
+***** 99.05.08 *****         602 572                             (         )
+  nuemiau galimube susprogdinti lavonus - labai maisho metant granatas, bo
+  jos sprogsta ant ju. sumazhinau lavonu skaichiu iki 32 - uzhtex.
+
+***** 99.05.07 *****         602 524                             (         )
+  suoptimizavau draw_flat_span - net 23% greichew vaikia! dar kai ka
+  pagreitinau, bal bal bal. zhasinas. skamba ishdidzhiai.
+
+***** 99.05.06 *****         601 701                             (         )
+  paoptimizavau draw_wall_column. teorishkai tai clockcycluu neishloshiau,
+  bet f-ja pagreitejo 17% net! del to, kad du cache missai nusieme. taigi
+  bet kox kesho perkrovimas yra l.blogai.
+
+***** 99.05.05 *****         601 584                             ( 162 983 )
+  ishtaisiau buga, kai zhengiant per spec. linijas nuluzhdavo su segm.
+  faultu. nauja konsoles komanda "addbot [kiek]", kuri prideda viena ar
+  daugiau botu bet kada. botai jei turi koki nors priesha omeny, tai bando
+  shtrafuoti visaip. granatos lygtai neprapuola i laiptus ir net neuzhlipa
+  ant ju. yra mapas "lievas", t.y. lievas.zdf . tai tas pac kvadratinis su
+  veeju. tik dar idejau teleporterius nematomus prie bfg.
+
+34*** 99.05.04 *****         600 252                             ( 162 540 )
+  nu jau to sorso ritinejimasis pirmyn-atgal per 600kb... jau tik 598kb...
+  tai va, galutinai nuemiau leeta ginklu pakeitima vienu kitais. daba kap
+  kvakiuje yr. patvarkiau komandu buferio vykdymaa - dabar teisingai palaiko
+  "wait [kiek]" komanda ir veikia greichew. lygtai padariau mapo pakeitimo
+  komanda "map <vardas>". kolkas ji i varda nereaguoja ir ish naujo uzhkrauna
+  ta pati dm6 lygi. o po to nuluzhta... negeruaj... 0! jau neluzhta!
+  tik kazhkur z_malloc'inti ~4kb nesi-z_free'ina. taigi reikia juos surasti
+  ir eliminuoti. sorsas ritinejasi kaip zoviesas, nors zoviesas tik
+  darinejasi, o sorsas tai ritinejasi. net botai pereina i kita lygi, tik
+  grafai(fragai) ir turimi ginklai - ne. kvyyyy!!! suzhviegee pitachiokas,
+  nes jau galima krauti lygius ish skirtingu zdf'u. po viena lygi viename.
+  txturas krauja ish pagrindinio. taigi padariau genocide.zdf, kuri galima
+  paleisti komanda "map genocide". tiesa, tinkle tai turi porolintis, bo
+  kitiem tai nepasako kad lygis pasikeite. todel idejau komandines eilutes
+  parametra "-map ???", kur ??? - mapo failo vardas __SU__ priesaga. jei
+  visi tinkle taip padaro, tai geruaj.
+  <...> ot ralyzaa parashiau, gromateelee parashiau ir man yra gerai. <...>
+
+***** 99.05.03 *****         600 908                             (         )
+  ai, bet ne. kolkas client/server nedarysiu, o darysiu multiple-zdf
+  palaikymaa (kad ne vienas lygis bootoo) ir kitokius zoviesus, gal paopti-
+  mizuosiu ka nors.
+
+***** 99.05.02 *****         602 919                             ( 162 960 )
+  na va, zhaidejas jau yra. beeda. nuuu, aras, visai apsileidai. zhaidzhew
+  su tik 3 botais, ir tai visi mane padaree (su weaponcheat). pradejau
+  daryti klienteli/serveruka. ojojoj... jau bemazh sugalvojau kaip, bet ten
+  tiek visokio sh(lamshto), kad baisu. veik visa netvorko koda reikia
+  perrashyti, o kur dar visokie predictionai, joininimaisi ir groodai...
+
+***** 99.05.01 *****                                             (         )
+  weee... ta zhaideja daryti ne tox jau ir juokas. surenderintas tai yra,
+  bet ten po pixeliuka visuose kadruose reikia kur nors pashalinti,
+  pakeisti spalva ir t.t. o kadru tai nemazhai - apie 60. weee... su
+  geguzhes pirmaja! nu va, jau yra tox lievas zhaidejas. dar ji reikia
+  apvalyti nuo likusiu tashku aplinkui.
+
+***** 99.04.30 *****         600 976                             (         )
+  nu jau zhaidejo 3d objektaa su trysdstudijo padariau. tox durniukas,
+  grybus spardo, uogas trypia, medzhius grauzhia, shautuvo laikyt nemoka,
+  plaukai kaip paoleus, kerzai kaip aro tik blogesni, doodas.
+
+***** 99.04.28 *****         600 976                             ( 162 997 )
+  dabaigineeju bindus. na va, veikia komanda "impulse ???" ot vialnes,
+  sorsas vel atsirito per 600kb, nes ish data.c ishemiau tai, kas buvo
+  nereikalinga (o buvo tai ~12kb). kolkas padariau kaip kveike - ginklai
+  pasikeichia ish karto. padariau tik vaizdo sukinejima - tai dabar
+  galima trumpam pasizhiureti, kas uzh taves, arba pazhiureti i shona. o,
+  sorsas vel >600! pradejau daryti zhaidejo objektaa su 3ds.
+
+33*** 99.04.27 *****         611 074                             ( 162 956 )
+  baigineju daryti bindus. dar ne visai padariau. jeee! bindai jau paprasta
+  forma veikia! taigi beliko tik padaryti visas judejimo komandas. kolkas
+  yra tik forward, backward, moveleft, moveright, attack, jump ir dar visos
+  kitos konsolees komandos.
+
+***** 99.04.23 *****         605 486                             ( 161 427 )
+  nu ka, laimejo tas zhalgiris, ta proga pro langa ishmechiau savo kompa
+  ish smagumo. oops, jame taigi visas z-y buvo... taigi neishmechiau, o darau
+  z-y toleu. nu va, dm6 jau kaip ir padarytas, lievas toks, dar teleporteriu
+  nera, tuoj padarysiu. jau, jau veikia ir paprastas teleportas! kaip kveike,
+  shiek tiek ishmeta zhaideja i prieki ir atsiranda visokie groodai.
+  parishau fix_div - dabar jis parisha dalybaa ish artimo nuliui skaicheus
+  ir nebeluzhta. keista, bet greichio nukritimo nepastebejau. istaisiau botu
+  fychera, kai jie ish arti ish viso neshaudydavo - dabar persijungia kita
+  ginkla ir shauna.
+
+***** 99.04.22 *****         602 192                             ( 160 022 )
+  taigi jau ir per 600 kb sorsas persirito, o ne nepersirito! ta proga idejau
+  kelis bugus, patvarkiau daiktu aciradimaa, t.t. idejau apie 10 nauju
+  texturu. paishymo be texturu rezhime kaip spalva ima ne pati pirma texturos
+  pixeli, o zdfe nurodyta spalva (pirmas pixelis dazniausiai buna toli
+  grazu ne vidurkis texturos spalvu, oj ne). nu gerai, einu zhalgiriaus
+  pazhiureti, vis nauda.
+
+***** 99.04.21 *****         598 345                             (         )
+  pradejau daryti bindus. ojojoj. ne beda, tik dar gerai nesu sugalvojes,
+  kaip ten viska daryti. bet lyg numanau, tai ir darau. o shiaip tai
+  bandau daryti kveikinio DM6 mapo porta ant zhaido-y. ish memoriaus, taigi
+  proporcijos gal bus ir ne tokios. be to, z-y juk nera tikro 3d :-(
+  jau veik viska padariau, tik truxta keliu detaliu ir normaliu texturu.
+
+***** 99.04.20 *****         woo hoo                             ( hoo woo )
+  apokalyptica - hhjeeeghha! giriu, pritariu, nebaru. daleidzhiu. koncertas
+  hjegha buvo, kala.
+
+***** 99.04.19 *****         595 119                             (         )
+  aha, nuluzhimo bugas tai ne su granatomis, o su lipimu link bfg! atrodo,
+  ishtaisiau - problema buvo ta, kad jis (z-y) neatkreipdavo demesio i
+  tai, kad lubos yra dangus ir del to reikia kai ka daryti.
+  jee! aliasai visai gerai veikia! bandzhiau tokii faila vykdyti:
+      alias doodas "echo teigiamas sens.; sensitivity 25; alias a groodas"
+      alias groodas "echo neigiamas sens.; sensitivity -25; alias a doodas"
+      alias a "doodas"
+  tai kai rashai konsoleje "a", tai padaro sensitivity 25, kai antra syki
+  rashai "a", padaro -25 (labai idomu taip), kai trechia - vel 25, ir t.t.
+  pridejau kelias txturas, shiaip bugus.
+
+***** 99.04.18 *****         595 303                             ( 159 974 )
+  2 naujos konsoles komandos - give_ammo ir give_weapons. tinkle neveikia.
+  atrodo, sutvarkiau kolizijos detekcija - granatos nuo neshaunamu daiktu
+  atshoka, surenkami daiktai gerai darosi. padariau 6 solidus - mazhus ir
+  didelius, aukstus ir zhemus, matomus ir nematomus. padariau kelis fycherus
+  greichiui, susijusius su tais solidais. darau mapu uzhkrovima rantaimu -
+  beeda! vienam tai ne beeda, ale tinkle tai kazkaip turi ir kiti surishti,
+  kad mapas pasikeite. emiau ir pridejau toki fychera kaip doome - texturu
+  offsetus, t.y. manualiai pakoreguojamas ju vietas. keista, bet tokis
+  daiktas veik nestabdo - apie 6 proco taktai vienai sienai!
+
+32*** 99.04.17 *****         586 928                             ( 158 421 )
+  aj, kas tas matkelio egzas, bala nemate. taigi darau z-y toliau. pagaliau!
+  po gausybes bugu ir nuluzhimu granatos veikia! net nuo sienu atshokineja.
+  dariau su portalais, viska padariau, tada parishau, kad jei tos ssectu
+  krashtines, kur ne ant liniju, segmentu nesudaro. vadinasi, portalams
+  reiketu pasirashyti savo bsp builderi. kolkas gal nereikia. bet shiaip
+  tai portalai lengvai pasidaro. vanduo kolkas yra "frrrozen" del to
+  nesurandamojo bugo ir patariama jo nenaudoti.
+
+***** 99.04.16 *****         584 809                             (         )
+  pertvarkiau kolizijos detekcija, todel dabar objekto diametras nebutinai
+  turi buti didesnis uzh jo greiti. dabar tiems objektams, kuriu greitis
+  didesnis uzh 15, diametras turi buti didesnis tik uzh puse jo greichio.
+  padariau opcija "botsdontfire" - shiaip, smagumui. dabar visada beega,
+  nereikia shifto spausti. woohoo! 3d veikia! kaip mapa tik testavimui
+  idejau toki mazha, ale su pseudo tiltu, kur galima ir po juo eiti, ir
+  virsh jo. tilto viduryje yra skyle, per kuria reikia pershokti. veliau tie
+  tilta sudarantys daiktai bus nematomi arba tures spec. spraitus ( kaip
+  rott'e ). taip galima net ir besisukanchius laiptus padaryti. darau
+  granatas kaip kveike - o jau bugai kokie! dar kokie 20 liko.
+
+31*** 99.04.15 *****         582 759                             (         )
+  jau! granatsvaidis, buza, spreadas ir slauniosios bombelees(tm) yra!
+  granlauncheriui ir slaunumui padariau atskira shoviniu tipa - granatas
+  (tokios rudos aukshtos dezhutes), kaip kveike2. darau advancesnee
+  kolizijos detekcija - galima bus daryti 3d lygius (su daug aukshtu).
+
+***** 99.04.14 *****         579 743                             ( 158 119 )
+  fak ta bugaa su vandeniu. nuluzhta kartais del jo. eee, jau nebejuokinga,
+  nes bugo nerandu, nors tu ka. kartais pakimba, kartais persikrauja, kartais
+  paisho nesamones.
+
+***** 99.04.13 *****         579 584                             (         )
+  oj darysiu! jau sugalvojau, kaip. tikras 3d. visai lengvai. tarkim,
+  lauke genocido - tiltas, po kuriuo gali eiti ir ant kurio gali eiti.
+  gal isheis. o gal ir ne.
+
+***** 99.04.12 *****         579 584                             (         )
+  ishtaisiau buga, del ko nepasileisdavo po sux95 ir suxnt - bandydavo
+  pieshti konsolee, kol ji dar nebudavo uzkrauta.
+
+***** 99.04.11 *****         579 584                             ( 158 093 )
+  renderinau granatsvaidii, dar nepabaigiau. shiaip dariau bugus. ishmokau
+  imagine ir fade2black bygtopo dalii. pridejau tokias konsoles komandas
+  kaip "memfree" (kiek laisvo mem), "camera" (toggle vaizda ish kameros -
+  kaip backslesho klavishas) ir "quit" (ka shita daro, nezhinau).
+
+***** 99.04.10 *****         fak fak                             ( fak fak )
+  nu va, per nulii tashku atsilikau nuo paskutinio, patekusio i baltijos
+  informos olimpiada. obyda, ne obedas. nu bet tiek jau to. fak.
+
+30*** 99.04.05 *****         579 001                             ( 158 165 )
+  vanduo veikia net ir be mappingo! fu... maniau, kad jau c: particija
+  boosiu nujojees. liko tik buvusi d: (dabar c:). o dingo viskas -
+  vatkomas, dosas, geimai, tevo darbai, 3dstudijo, ir ZHAIDAS-Y!!! bet po
+  ilgo darbo su unerase, ndd, fdisk ir svarbiausia FIPS, sugrizho c:
+  diskas. d: prapuole, bet kaip laisva vieta c diske, taigi vel manual
+  unerase. viskas geruaj dabar. o baisu buvo... kai ka ish pieshimo
+  perrashiau asmu, tai fpsai padidejo apie 0.6
+
+***** 99.04.04 *****         574 458                             (         )
+  taigi velykos shendien! tai ta proga darau tokii fycheraa kaip vanduo.
+  hjeegha! jis veikia! paprastos plazmos principu - ishkraipo backgrounda
+  ir pashadina. nurodomas jo aukshtis kaip neigiamas sektoriaus tagas.
+  dar su noflats arba nowalls neveikia.
+
+***** 99.04.03 *****         567 892                             (         )
+  o jau kiek nepastebeetu buguu ishtaiseu per taa konsolee! gal penkis.
+  taigi pieshia konsolees backgroundaa toki su zy logo. nuemiau antra
+  ginklo struktura (ta, kuri biesina ir stabdo). shiaip patvarkiau.
+
+29*** 99.04.02 *****         568 805                             ( 156 792 )
+  konsoleeje jau galima rashyti, perzhiurineti su pgup/pgdown; history su
+  up/down; uzhbaigimas su tab/shifttab. tik kazkodel i jokias komandas
+  nereaguoja. jau reaguoja! ir net gerai!
+
+***** 99.04.01 *****         715 345                             ( 101 874 )
+  padariau konsolee, perdariau netvorkaa shiek tiek. konsolee tai jeega!
+  gali exec daryti netgi! ir tab klevishas veikia! ish esmes jau baigiau
+  client/server ir paprasta predictiona, tik reikia ishtestuoti dar.
+  su balandzhio pyrma. ish tikruju tik padariau beveik konsolee. sorsas yra
+  ~580kb, o ne tie 715. egzekas irgi ne toxaj.
+
+28*** 99.03.31 *****         568 319                             ( 152 329 )
+  gsm'o pasiulymu padariau opcijas, kad neteksturuotu sienu arba grindu,
+  o pieshtu viena spalva (bet su apshvietimu). nu tai net atjungus bent
+  viena teksturavima, fpsai pas mane nuo 24 iki max.(35) uzhshoka. idejau
+  sheshta gamos lygii - psycho-gamma. hjeeghaa!
+
+***** 99.03.30 *****         550 040                             (         )
+  oj konsolee, tai konsolee, tai konsolee, tra le le. jau tureetu viska
+  daryti, tik dar nera pachio ivedimo kodo.
+
+***** 99.03.28 *****         546 027                             ( 149 516 )
+  visai rimtai darau konsolee. darau darau... oj taj taj. wo.
+
+27*** 99.03.27 *****         534 873                             (         )
+  miro kvailas botuu bugas, nulauzhdavees sisemaa. oj ne, nemiro. padariau
+  liepsnosvaidzhiui shovinius, tris armoro tipus (kaip kveike). galima
+  vaizda zhiureti ish kameros (kaip djuuke) - paspausti '\'.
+
+***** 99.03.24 *****         525 253                             (         )
+  E         Am       E          F
+  waj ash nuveejau   in tams' girialiuu                           Am x02210
+  G        F         E          Am                                Bb x13331
+  taj ir pamaachew   bot'votaa botelii                            C  x32010
+  Dm       Bb        F       C                                    Dm xx0231
+  oj botas botas     botas botuuulis                              E  022100
+  Dm       Bb        F     C                                      F  133211
+  oj botas botas     bo-otasai                                    G  355433
+
+  {-=solo is coming=-}
+
+  o shiaip tai jie protingesni, yra opcija ar duoti jiems pradzhioj ginklus,
+  ar ne. jei ne, tai jie nieko neivaro.
+
+***** 99.03.23 *****         525 930                             ( 148 126 )
+  darau toliau botus. jie karts nuo karto bando spaudyti speisaa, rechiau
+  nusishauna (buvo kvailas bugas - ne pliusas o minusas parashytas atstumo
+  skaichiavime). yra botuu cheatinimo opcija lookcheat - ar jis 'mato' ir
+  uzh savo nugaros. o kai chytina, tai 7 botai mane padaro. net su 4 botais
+  kox vienas turi panashiai fraguu.
+
+***** 99.03.22 *****         527 949                             ( 147 869 )
+  taigi ne fycheras, o bugas buvo! tai dabar botai jau shaudo. suoptimizavau
+  juos, kad ne taip stabydtuu. pagreitinau rakietas. botai jau visai protingi,
+  jei mato ka nors, tai atsisuka ir shauna, ir shauna smarkiai, o jei
+  nemato, tai visaip bando beegioti. bet ant mano kompo 7 botai jau yra
+  stabdas - fpsus numusha nuo ~25 iki ~12. o su kokiais 2-3 visai gerai
+  grajinasi. botai dazhniausiai net neneigiamus fragus turi! per konfigo
+  failaa galima nurodyti, kad zhaidejas irgi turi booti botas - tada
+  pamatysi, kaip kvailai jie zhaidzhia vis delto.
+
+26*** 99.03.21 *****         522 525                             ( 146 527 )
+  jau kazkaa turetuu vietoj txto rashyti, bet dar nieko nerasho. aha! jau
+  rasho. jam skirtos trys eilutees, o ne viena kaip doome. fontas tai liewas.
+  dar gali rashyti fpsus. botai jau zhymiai protingesni - shaudo tik l.retai
+  arba jeigu ka nors pamato, neshauna raketomis ish arti, taigi zhymiai
+  rechew nusizhudo (~10 kartuu mazhew). tobulinu botus. kazkokii fycheraa
+  padariau, tai jie dabar ish vis neshawdo.
+
+***** 99.03.20 *****         514 584                             (         )
+  taigi veel per 500kB persirito sorsas! ta proga padariau gammos
+  reguliavimaa, kad per tamsu nebootoo. gamma yra nuo 0 iki 4, ja
+  keichia konfige arba klavishu F11. isheina ish zhaidimo ne ESC, o F10.
+  darau txturuu animacijaa. o, ji jau veikia netgi! supaishew shriftaa ir
+  darau jo palaikymaa, o tuo pachiu ir konsolees.
+
+***** 99.03.18 *****         496 817                             ( 142 533 )
+  pareguliavau damagus, gale dar parasho lentelee, kiek kas ko nukalee.
+
+25*** 99.03.17 *****         496 615                             ( 142 531 )
+  veel idejau kaip lygii genocidaa. lygyje lauke padariau fyntaa su vandeniu,
+  kur atrodo, kad ilipi, o tekstura paisho aukshchew. dar idejau  lauke
+  prie vaistineelees nematomus laiptus. botai shiek tiek atsisuka link
+  zhaidejo, rechew nusishauna su raketomis, jei turi raketas ar plazma,
+  tai persijungia. jau gal netgi botai geriau, nei std. doomo enemiai! xexe.
+
+***** 99.03.15 *****         495 678                             ( 142 245 )
+  taigi parishau, kodel konsistencijos klaida! taigi jis visus veiksmus
+  zhaidejo nusiusdavo kitiems, o mlooko tai nenusiusdavo! tai jei ash
+  pazhiuriu aukshtyn ir shawnu, tai pas kitaa ash vis dar zhiuriu tiesiai
+  ir shaunu. o sheip tai dar padariau botus. jei zhaidi ne tinkle, tai
+  gali leisti su parametru -bots N, chia N-botuu skaichius. kolkas jie,
+  aishku, tik stovi. uoj, ne, jau nestovi, o juda, shokineja arba shaudo
+  (randomishkai). jie atsiranda jau su mgunu, rlauncheriu, plasmagunu ir
+  liepsnosvaidzhiu, ale vistiek kvaili yra.
+
+***** 99.03.14 *****         493 397                             ( 141 689 )
+  tvarkau, derinu gravitacijaa, trintii ir kitus dalykuz. padariau tokii
+  liepsnosvaidii. sukroviau ginklus normaliau ant skaichiu - 1=kuoka
+  3=shautuvs 4=automatux 5=visi granatiniai 6=visi raketiniai 7=plazma ir
+  liepsnosvaidis 8=bfg 0=visi visi.
+
+***** 99.03.13 *****         488 795                             ( 141 154 )
+  aptvarkiau, lygtai ishtaisiau konsistencijos klaidaa. shiek tiek
+  pareguliavau veiksmuu trukmes.
+
+24*** 99.03.10 *****
+  VIENAS TUKSTANTIS DEVYNI SHIMTAI IR DEVYNERIOS DESHIMTYS DEVINTAISIAIS
+  MUSU PO JEZAUS KRISTAUS GIMIMO, KOVO VIENUOLIKTOSIOS, MUSU VALSTYBES
+  LIETUVOS VALSTYBINES SHVENTES ISHVAKAREESE, TAI YRA KOVO DESHIMTAA DIENAA
+  LAIKO TARPE TARP 8:03 RYTO IR 8:12 RYTO, TAI YRA PER INFORMATIKOS PAMOKAA,
+  GARBUSIS -=ARAS=- ISH NE MAZHIAU GARBAUS ^BYGTOPO^ RAKETUU PAGALBA PADAREE
+  PIRMAA FRAGAA ZHAIDO-Y ISTORIJOJE. viskas gerai, tik lygtai po pirmo frago
+  ar kada tais vienas ish zhaideju nuluzhta su konsistencijos klaida.
+
+***** 99.03.09 *****         494 324                             ( 141 186 )
+  jau netvorke zhaidas uzhsikuria, bet ishkarto ishmeta su klaida, kad
+  lowtic<game_tics. lygtai jaa pataisiau.
+
+***** 99.03.08 *****         496 559                             ( 141 160 )
+  taisau netvorkaa, bo newejke. gal ir sutaisew, bet dar nebandzhew.
+
+***** 99.03.07 *****         496 190                             ( 141 390 )
+  hjeeghaa! per 500 kb sorsaz persirito! o sheip tai darau toleu netvorkaa.
+  o ten taip, nu jau taip, visaip. uoj, ne, atsirito atgal. tai va,
+  teorishkai gal jau ir veikia netvorkas, o gal ir ne. ant vieno kompo tai
+  veikia. dar shiaip tureetu ant visuu kompu veikti vienodu greichiu jau.
+  fpsai deel tinklo, rodos, nenukrito.
+
+23*** 99.03.04 *****         491 671                             ( 136 760 )
+  taigi daiktus kai paimi, tai jie pranyxta, o po apie 30 sekundzhiu
+  vat atsiranda veel. veikia 3 deathmatchai: 1 - ginklai pasilieka,
+  daiktai pranyxta ir neatsiranda; 2 - viskas pranyxta ir atsiranda (kaip
+  doome); 3 - ginklai pasilieka, daiktai pranyxta ir atsiranda (kaip kveiko
+  3 deathmatchaz). vat! o, jau padariau ir sveikateeles - vienoje 10%,
+  kitoje didesneeje 25%. pradejau daryti netvorko suportaa.
+
+***** 99.03.03 *****         478 221                             ( 136 253 )
+  shovinius skaichiuoja! kai jie pasbaigia, visaip gudriai perjungia ginklaa.
+  va, yra ir shoviniai! kai ju paimi, tai ju ir daugeja. beeda, kad jie dar
+  neishnyxta, taigi pastovejus ant ju ju pastoviai daugeja.
+
+***** 99.03.02 *****         467 962                             ( 135 718 )
+  jau yra tokie daiktai, kaip gulintys ginklai. tiesa, dar juu nesusirenka.
+  aj, jau ir renkasi, tik bugovai - ish pradzhiu ir taip turi.
+
+***** 99.02.26 *****         464 694                             (         )
+  darau toliau.
+
+***** 99.02.23 *****         459 130                             (         )
+  nu va, darau veel. jau padariau shoviniuu skaichiavimaa, tik dar visi
+  ginklai shovinius ima ish tos stebuklingosios nesibaigianchios dezhutees.
+
+***** 99.02.18 *****         459 952                             ( 134 720 )
+  jau beveik gerai skaichiuoja fragus. tik nepriskaichiuoja tu, kur
+  atsirasdamas telefragini. teorishkai tuos, kur teleportuodamasis
+  telefragini, tureetuu skaichiuoti.
+
+***** 99.02.17 *****         459 936                             ( 134 594 )
+  taigi status baras jau yra o ne neera! dabar ten rasho tik kulipkuu
+  kiekii, zdorovjuu, fragus bei apsauginiuu marshkineeliuu spraunumaa.
+
+22*** 99.02.16 *****         461 364                             ( 132 823 )
+  jau zhaidejus daro skirtinguu spalvuu: 1-zhalias 2-rudas 3-raudonas
+  4-tam.pylkas 5-tam.meelynas 6-violetinis 7-zhydras 8-geltonas. shiaip
+  perdariau try_run_tics, kelis minorinius bugus ishtaisiau. pradejau daryti
+  status baraa.
+
+***** 99.02.13 *****         446 887                             ( 132 314 )
+  ajajajaj. nu va, lygtai zhaidejai jau nesiporolina, kai numyrshta.
+  dar ant bajerews padarew zhaidejaa ish doomo. tokii zhaliaa. jis jau
+  mirshta normalej - krenta ant keliuu. galima lavonus dar syki susprogdinti.
+
+***** 99.02.11 *****         445 052                             ( 131 915 )
+  taisau buguz. lygtai ta, kur zhaidejus numirusius uzh mapo ishmesdavo,
+  ishtaisiau.
+
+***** 99.02.10 *****         445 094                             ( 131 915 )
+  kai smarkiai pashauni zhmogaa, tai taip kraujalis tykshta ir meesai
+  laxto. kai atsikeli numirees, gali atsirasti ant kurio nors kito, tada
+  jii telefragini (10000 damago).
+
+***** 99.02.09 *****         441 641
+  oj su tais numirimais newale... jau lyg ir geraj.
+
+***** 99.02.07 *****         441 361                             ( 131 042 )
+  visaip ten perdarau kolizijas... gudriai ir negudriai... vis dar bugai
+  su ishokimu vienuu i kitus (l.retai, tik prie kai kuriuu aplinkybiuu).
+  jau lygtai buguu neera. kartais gali buuti tokia situacija, jei
+  zhema patalpa ir uzhshoka vienas ant kito ir abu negali pajudeeti, nes
+  abu spaudzhia lubos ir grindys, o apatiniam tada skauda. bet galima shauti
+  raketa, ir abu ishshoka. pradejau daryti tokii liewaa lygii. kazkas blogai
+  su shoviniais - kartais eina kewraj. jau viskas geraj. dar vienas buga
+  miro, kai grinduu aukshchiai buuna neigiami. bandau daryti numirimus ir
+  atsikeelimus, t.t., bet nesigauno kolei kas. jau gal ir gaunasi, bet dar
+  ne. lyg ir gerai, tik kartais shiaip kazhkokia tai mistika gaujasi.
+
+***** 99.02.06 *****         432 056
+  vai tai bugai ir toliau... nezhinau ka daryti, gal veel zhaiday uzhdaryti.
+  nessamonee, bet rimuojasi. jau! jau lygtai ishtaisiau ishstuumimo ish
+  zhemeelapio bugaa. shiek tiek perdarau kolizijos korozijaa su daiktais.
+  oj dar su bugais tenais...
+
+***** 99.02.02 *****         432 752
+  oj bugai bugai. kartais su bfg galima ishshauti zhaidejus ish mapo! tada
+  jie nebegali sugrizhti, bet viska mato.
+
+***** 99.02.01 *****         432 376
+  lygtai ishtaisiau ta buga, kur kartais vienas ant kito shokdami zhaidejai
+  ikrenta vienas kito vidun. oj ne, neishtaisiau.
+
+21*** 99.01.31 *****         432 230                             ( 129 470 )
+  durys jau atsidaro, bet dar neuzsidaro kazkodel. Aa. jau ir uzsidaro.
+  taigi viskas geraj. durys yra greitai atsidaranchios arba negreitai, ir
+  laukianchios atsidariuosios 2, 6 arba 13 sekundzhiu, taigi 6 tipu durys
+  ish viso. manau, kad dm'ui tokiu, kur atsidaro ir neuzsidaro, nereikes.
+  padariau ir liftus veikianchius. yra jie leti arba greiti ir triju rushiu-
+  1: nusleidzhia-laukia-kyla 2:kyla-laukia-nusileidzhia 3:pakyla...
+  nusileidzhia... ... jei shoki ir dar kildamas pataikai kam nors i galva,
+  tai pasispiri, o jei jau leisdamasis, tai nestabiliai labai jautiesi -
+  nukrenti i kuria nors puse. o naujas trys d studijo tai nebeluzhta! tai
+  darau liepsnoswaidi. o shiaip tai padariau kuokaa su spygliais, ir ji
+  kala kaip 15 kulkeeliuu (2vamzdis kaip 18).
+
+20*** 99.01.30 *****         422 814
+  pradejau daryti specialiu sektoriu bei liniju palaikyma. dabar jau
+  baigiau daryti visaip besikeichianchias shviesas. dar padariau tokii
+  dalyka kaip sektorius su veju arba shiaip neshanchius i shona. su veju
+  tai nesha visus kuriuos reikia, kuo lengvesni, tuo smarkiau. su shiaip
+  neshanchiais tai nesha tik tuos, kur ant zhemes, ir visus vienodai.
+  granatinei ginklai shaudo ne visada taip pat - shiek tiek netaikliai.
+  pradejau duryti visokiausiu duruu palaikymaa.
+
+19*** 99.01.25 *****         405 223                             ( 126 146 )
+  taigi per 400 kb persirito, o ne nepersirito! taigi ta proga, kad
+  BFG 11000 padariau! sumazhinau duumeliuu kilimaa, shiaip visaip ten
+  pridariau. BFG shauna taip: kai sprogsta, tai ish zhaidejo vietos zhiuri
+  pradedant nuo -90 iki +90 laipsniu po 4 laipsnius ne nuo zhaidejo
+  krypties, o BFG skridimo krypties, t.y. nuo tos krypties, kuria zhaidejas
+  paleido BFG. jei taip skanuodamas jis aptinka ka nors, tai jam duoda
+  randomishkai nuo 15 iki 105 damago _nepriklausomai_ nuo atstumo iki jo.
+
+18*** 99.01.24 *****         397 511                             ( 125 719 )
+  veikia jau ir palechiu kaitaliojimas - kai pashauna ar pasishauni, tai
+  raudonai daro visaip. paisho pulsuojanti taikikli. daro ishmetimus i
+  virshu ar apachia kaip kveike, jei pataikai su raketeele i kojytes ar
+  galvelee. visaip dar ten darosi. nupieshiau reketoneshiki kaip kitoki -
+  su zhiedais. yra ir dar vienas ginklas - plassmelee! l.fainej yra
+  ateiti su kokiais sheshiais i lauka ir plazmuoti, o su septintu bandyti
+  pershokineti visas plassmas.
+
+17*** 99.01.23 *****         391 192                             ( 124 621 )
+  kaip ka perdariau, kai ka nuemiau, doodas. biesas su tuo mguno shaudymu
+  aukshtyn/zhemyn. shaudyt tai shaudo, bet su visokiais atsitrenkimais i
+  lubas ar grindis tai beeda. jau ne beeda! shaudo geraj. taigi ir ginklas
+  naujas atsirado, o ne neatsirado - toopas dvivamzdis, kurs shaudo ish
+  18 kulipkuu.
+
+16*** 99.01.21 *****         391 361                             ( 123 983 )
+  pradejau sunku ir atsakinga darba - ishimti ish zhaidoy tai, kas
+  susije su monsteriais ir prideti tai, ko truxta. suoptimizavau senus
+  bugus, tai fpsai padidejo apie 1. padariau konfigo nuskaityma! jau
+  nuskaito M_PITCH, SENSITIVITY ir USE_MOUSE. padariau kolizijaa su daiktais,
+  tai dabar galima visaip ten shaudyti i zhogeliukus, ir be to, jei
+  shaudai su kulkosv, tai tox liewas kraujalis beega.
+
+***** 99.01.19 *****         376 977
+  taisiau bugus pagalbinese programose, zhiurojau, shiaip klausiau dire
+  straits ir nieko gero nenuveikiau. ai, nupieshiau lieva granatos
+  spraita.
+
+***** 99.01.17 *****         376 611
+  nupieshiau grazhesnius raketu pedsakus - didesnius ir rechiau
+  atsirandanchius, todel kai daug raketu, ne taip stabdo (ypach tinka
+  sl.bombelei). nupieshiau ir raketas ish visu pusiu, tik kazhka
+  suporolinau, tai kartais jos bugovai atrodo. einu miegoti.
+
+15*** 99.01.16 *****         376 102
+  gerai, dabar jau pradedu programyti. tai va, pasidariau programeles
+  lumpo SPRITES nuskaitymui ir irashymui, tai dabar bent jau nereikia per
+  hex view redaguoti. jau nupieshiau lieva plehreriaus spraita ir padariau
+  kad starto pozicijose jie atsirastu. yra! yra "multitaskingas"! veikia
+  8 zhaidejai, perjungineti su F1..F8, aceit konsoles atskiros, visi valdosi!
+
+***** 99.01.05 *****         374 422             bla bla egzekas ( 116 799 )
+  tai va, atseit pritaikiau ashtuoniems zhaidejams - jau ne vienas kint.
+  CHUV, CHUV[8] ir rodo ta, kuris rodosi (kolkas viena ir ta pati nulini).
+
+***** 99.01.05 *****         bla bla             bla bla egzekas
+  su nauja pagarba ! tai va, net nezhinau ar daryti zhaidujy reopen, ar
+  ne. jei daryti, tai ar daryti normalu zhaidima ar tik tinklini ir viskas ?
+  ir ish vis, ko tu nori nuo manes ? kakawaw.
+
+***** 98.12.30 *****         373 107             310 162 egzekas
+  paemiau ir ishtaisiau buga, kad shoviniai sprogsta, i dangu atsitrenke.
+  dabar jie tik pranyxta.
+
+***** 98.12.29 *****         372 819             310 109 egzekas ( 116 397 )
+  nu jeigu jau net ir Paolius imasi zhaidoy, tai negi arookaz nesiims ?
+  emiau ir pridejau mlooka ir ishtaisiau nelemta buga. tixliau, tai
+  neishtaisiau, bet kadangi be mlooko jis ishlysdavo l.retai, o su
+  mlooku l.retai neishlyzdavo, tai padariau mlooka, o visa endzhyna abgavau,
+  atseit be mlooko viskas yra. atatinkamai pakeichiau ir paletes -
+  vietoj 255 spalvos violetines padariau pilka, tai nepasistebi beveik. wo.
+  padariau po pmodew o ne po dos4gw, tai egzeko sumazhejimas pasidare lygus
+  54kB. fpsai yra 21.90 .
+
+****************************************************************************
+****************************************************************************
+****************************************************************************
+
+***** 98.08.31 *****         bla bla             bla bla egzekas ( bla bla )
+  atrodo zaidasy miro. pabandziau perkompiliuoti su watkomu vienuoliktu, o
+  ne deshimtu, tai egzekas vietoj 175026 pasidare 194138, o fpsai
+  vietoj 17.59 pasidaree 21.04 (oho!). vadinasi, zaidasy vistiek miro,
+  bet vatkomas vienuoliktas tikrai geresnis uzh deshimta. wo. atia.
+  dedu duubaa ir zhaida-y uzhdarau.
+
+***** 98.08.29 *****         bla bla             bla bla egzekas ( bla bla )
+  tie viol. tashkai yra l. negerai. bandziau parrashyti su kitokiu algoritmu,
+  bandzhiau nukopijuoti ish doomo sorsu - niekaip. paisho violetinius.
+
+***** 98.08.11 *****         bla bla             bla bla egzekas ( bla bla )
+  bla bla. kol ash che knisuosi su bugais, zhaidasy teknologishkaj paseno,
+  ashen praradau daugybeh laiko, t.t. o bugai tai tokie, kad neh pro kur.
+  wo. padariau zhaiduj y intrushke su TrysDehStudijoMaksVienasTashkasDu -
+  sheshi ir viena puseleh mego.
+
+***** 98.08.02 *****         372 709             343 151 egzekas ( 170 278 )
+  kazkas. violetinei tashkai dar yra.
+
+***** 98.07.19 *****         372 528             369 845 egzekas ( 170 318 )
+  taigi nieko nepadariau, tik viska perkompiliavau su optimizacijomis,
+  tai ir egzekas sumazhejo 20 kB, ir fpsai padidejo nuo 18.6 iki 21.3465 (!)
+  taigi optimizuoja vatkomas gerai. paisho vis dar bugovai - su violetineis
+  tashkais.
+
+***** 98.07.08 *****         372 676             374 741 egzekas
+  mlookas jau kaip ir veikia, bet dar bugovai bugovai paisho, bet
+  tai nesvarbu, o svarbu tai, kad mlookas tai nuripintas ish dosduumo.
+
+***** 98.07.02 *****         370 776             372 969 egzekas
+  iki shiol atseit dariau grafika, o shiaip tai viskas luzhta, tai bandau
+  zhiureti, kodel luzhta. gal del to, kad po DR-DOSu bandau leisti.
+  paleidau po MS-DOSu, ir nebluzhta. taigi DR-DOSui banas. raketu pedsakai
+  ishsisklaido, kas sudaro estetishkesni ir menishkesni vaizda (!)
+
+***** 98.06.22 *****         370 542 sorsas      372 796 egzekas ( 189 310 )
+  nu ka ash zhinau zhinai;-nieko;bet ir ne tas, o kitas, tachiau taipogi
+  ir ne tas, aishku, shitas! SHITas. graziau palieka pedsakus, kurie, be
+  abejo, dar ir ilgiau pasilieka. bandau paishyti normalesnius ginklus.
+
+14*** 98.06.21 *****         368 140 sorsas      372 653 egzekas ( 189 002 )
+  yra 6 ginklai ( ir veik visi raketiniai ! ): 1 - granata, 2 - raketa,
+  3 - dvi kvailos raketos, 4 - trys ishsisklaidanchios raketos,
+  5 - slaunioji bombelee, 6 - mehsmaleh.
+
+***** 98.06.19 *****         360 947 sorsas      370 947 egzekas
+  paisho ne tik sprogimus, bet netgi ir raketas ! tiesa, kartais
+  raketos skrenda kiaurai sienas. missiles padariau kaip granatas -
+  su gravitacija. arti sprogus raketai, atmeta atgal netgi. raketos
+  palieka pedsaka, kaip ant kveiko. fpsai apie 17
+
+13*** 98.06.18 *****         350 280 sorsas      363 321 egzekas ( 182 802 )
+  galima shaudyti ! be to, paisho netgi sprogimus ! fpsai mazhdaug tie
+  patys. aishku, kai daug spraitu, tai nukrenta apie 1. palikau ekrano
+  apacioje 32 eilutes status barui.
+
+***** 98.06.17 *****         347 865 sorsas      362 274 egzekas
+  kartais nei ish shio, nei ish to persikrauja, kartais net neuzsikrauna.
+  o mistika buvo tame, kad pointeriui nebuvo priskirta pradine reiksme.
+
+***** 98.06.16 *****         340 318 sorsas      357 514 egzekas
+  mistika. jei pajudini pele, tai nuluzhta. o be peles tai galima
+  zhaisti.
+
+***** 98.06.14 *****         334 357 sorsas      352 710 egzekas ( 177 078 )
+  ginklas visaip duodasi vaikshtant
+
+12*** 98.06.13 *****         333 474 sorsas      352 693 egzekas
+  paisho dangu ! paisho RPG ish dukenuketrysd kaip ginkla ! fpsai aishku
+  sumazheja iki 16.25
+
+***** 98.06.12 *****         333 296 sorsas      352 412 egzekas
+  perrashius DRAW_FLAT_SPAN asm'u fpsai padidejo apie 1.30 (!)
+  perrashius DRAW_WALL_COLUMN asm'u fpsai padidejo dar 2.55 (!)
+  pavyzdziui, stovint pradzioje 9 sekundes, ish 13.79fps
+  pasidare 17.65 (!!!).
+
+***** 98.06.11 *****         331 829 sorsas      347 192 egzekas
+  perrasius GET_COLUMN asm'u fpsai padidejo apie 0.25
+
+11*** 98.06.10 *****         331 170 sorsas      347 295 egzekas ( 175 718 )
+  optimizavus ekrano adreso skaiciavima fpsai padidejo apie 1.00 (!)
+  o juk paprastas lookup lentelius... paisho permatomas txturas ! tame yra
+  vienas nezhymus bugelis.
+
+***** 98.06.07 *****         330 691 sorsas      347 180 egzekas ( 175 718 )
+  visishkai perdarytas txturu laikymo principas, leidziantis naudoti
+  ir permatomas texturas bei pagreitinantis kai kuriuos eventus.
+  supaishiau normalesnes txturas. fpsai ishaugo iki apie 16.
+  laikinai padariau keliu sektoriu auksciu savaimini keitimasi.
+
+10*** 98.06.06 *****         328 737 sorsas      346 779 egzekas
+  veikia skirtingi apshvietimai bei tolimu objektu tamsinimas !!!
+  taip pat miro "magnetiniu" sienu bugas - kai zhaidejas prikibdavo prie
+  sienu. tachiau fpsai sumazhejo - dabar vidutinishkai 14-15 fpsu. teorishkai
+  jau turetu piesti spraitus ir permatomas teksturas. va.
+
+***** 98.06.05 *****         310 526 sorsas      312 589 egzekas
+  bandau daryti spraitu pieshima.
+
+***** 98.06.04 *****         301 005 sorsas      312 589 egzekas
+  1 bugas miro
+
+09*** 98.06.02 *****         300 764 sorsas      312 589 egzekas ( 164 582 )
+  respondyja ing mousaa ! skleustialiuosia parasheu kiek egzeks
+  sudaroo nustripintas, t.y. be debuginimo informacijos.
+
+***** 98.06.01 *****         298 722 sorsas      311 427 egzekas
+  zhaidejas visaip duodasi veikshciodamas ir t.t.
+
+08*** 98.05.28 *****         297 316 sorsas      310 819 egzekas
+  galima shokinehti !!!
+
+07*** 98.05.25 *****         296 517 sorsas      310 679 egzekas
+  labai nervuoja labai zhiopli bugai. kolizija __NORMALI__ ! o bugas
+  tame, kad vietoj unsigned int buvo int... fpsu apie 19
+
+***** 98.05.24 *****         296 452 sorsas      310 452 egzekas
+  bla bla bla.
+
+***** 98.05.23 *****         299 744 sorsas      283 916 egzekas
+  nieko naujo.
+
+***** 98.05.19 *****         299 918 sorsas      284 341 egzekas
+  sorsas vel atsirito atgal. palei sienas shliauzhioja _beveik_
+  normaliai ! yra dar keli bugai. va.
+
+06*** 98.05.18 *****         300 068 sorsas      284 562 egzekas
+  sorsas persirito per 300000, taigi ir korozijos kolizijaa daro.
+  tik palei sienas neshliauzhioja, bet man tai kas. o fpsai net
+  nenukrito - vis apie 17 !
+
+***** 98.05.17 *****         299 983 sorsas      284 568 egzekas
+  kartais kolizuojasi, kartais ne, mistika kazhkokia
+
+***** 98.05.15 *****         296 750 sorsas      284 726 egzekas
+  bando daryti kolizijos detekcija
+
+***** 98.05.11 *****         281 812 sorsas      258 746 egzekas
+  vaikshto jau nepakibus ore !
+
+***** 98.05.10 *****         281 539 sorsas      256 808 egzekas
+  galima isheiti klavisho escape pagalba. bandau daryti kolizijos
+  detekcijas, kad nevaikschiotu kiaurai sienas.
+
+05*** 98.05.09 *****         268 041 sorsas      248 716 egzekas
+  jau galima ir vaikshchioti rodykliu bei shifto pagalba ! tiesa, dar vis
+  kiaurai sienas bei pakibus ore... kaip lygii idehjau genocide.wad su
+  pakeistom tekstuhrom. padaro 17-18fps
+
+***** 98.05.07 *****         265 030 sorsas      248 694 egzekas
+  jau galima sukinehtis i shonus rodykliu bei shifto pagalba.
+  padaro apie 17.60fps
+
+04*** 98.05.05 *****         264 786 sorsas      245 367 egzekas
+  pagaliau flatus paisho ___NORMALIAI___ !!!!!!!!!!!!!!!!!!!!!!!!
+  padariau lygi su peraukshtejimais, tai padaro 18.89fps. dabar darau
+  keybordo handleri ir visaa valdymaa.
+
+***** 98.04.30 *****         254 241 sorsas      238 381 egzekas
+  walio! dabar flatus _beveik_ normaliai paisho, kai kampas bele koks.
+  padaro 19.39fps.
+
+03*** 98.04.29 *****         253 409 sorsas      237 090 egzekas
+  joohoo! miro kitas prakeiktas bugas, dehl ko pasisukus zhaidehjui, viska
+  paisho ne taip. dabar gali plehjerius sukiotis kiek nori, vistiek
+  sienas gerai paisho. 19.40fps. flatus _beveik_ normaliai paisho, kai
+  zhiurejimo kampas yra II ketvirtyje. wo.
+
+***** 98.04.28 *****         253 406 sorsas      237 084 egzekas
+  prakeiktas sienu bugas ishtaisytas, bet dar bugovai paisho flatus.
+  freimreitas dar nukrito - iki 18.82fps. reikia kazhka optimizuoti,
+  kitaip nieko nesigauz.
+
+***** 98.04.27 *****         252 475 sorsas      237 150 egzekas
+  visas ZHAIDAS-Y yra vienas didelis bugas, kuris turi nesuskaichiuojama
+  galybe subbugu. neieshkok bugu programoj, jei nezhinai, ka su jais veikti.
+  tai ash ir neieshkau.
+
+***** 98.04.26 *****         252 318 sorsas      237 109 egzekas
+  flatai jau shiek tiek panashesni i flatus. padaro 26.24fpsuu.
+
+02*** 98.04.23 *****         252 125 sorsas      237 403 egzekas
+  kazhka vietoj flatuu renderyja, bet sunku suprasti, kaa.
+  freimreitas zhiauriai nukrito - iki 26.49fps
+
+***** 98.04.21 *****         251 163 sorsas      237 191 egzekas
+  bandymai optimizuoti, ishtaisyti bugus. shiek tiek prirashiau komentaruu,
+  nes pats jau nebsusigaudau kai kur. padariau kitaa lygii, su pastrizhom
+  linijom, tai jau padaro net 45.98fps !!! jehga ! isheina, kuo lygis
+  pastrizhesnis, tuo geriau ! bandau daryti flatuu renderyjymaa.
+  nelabai isheina kolkas. wo. reikia eiti miegoti jau.
+
+***** 98.04.20 *****         244 740 sorsas      230 923 egzekas
+  padaro 26.75fps su asm'iniu DRAW_WALL_COLUMN
+  padaro 31.92fps su c'iniu DRAW_WALL_COLUMN
+  taigi tegyvuoja C !!!
+
+***** 98.04.19 *****         244 263 sorsas      226 911 egzekas
+  padaro 32.05fps FIX_DIV perrashius asm'u.
+  perrashius DRAW_WALL_COLUMN asm'u, greitis sumazhehjo iki 25.89fps !
+
+01*** 98.04.18 *****         244 503 sorsas      226 911 egzekas
+  jeheheh!!! sienas paisho _beveik_ normaliai !!! veikia lehchiau -
+  padaro 31.32fps, bet pagrindineh f-ja dar ne asm'u parashyta.
+
+***** 98.04.17 *****         241 176 sorsas      224 823 egzekas
+  laikinai iidehjau virtualaus ekrano ishvalymaa. miro 1 bugas.
+  paisho bugovai.
+
+***** 98.04.16 *****         241 116 sorsas      224 879 egzekas
+  keli bugai miro! kazhkaa paisho, tik shiek tiek bugovai. padariau
+  mazhaa plehjeriaus judehjimaa. gale parasho statistikaa. kartais
+  nuluhzhta.
+
+***** 98.04.14 *****         240 059 sorsas      201 000 egzekas
+  pataisyta keliolika renderyjimo buguu. truhkstamos mizernos f-jos jau
+  yra. turehtuu sienas renderyti, bet nerenderyja nieko. kazhkoks bugas
+  su grafika. ii limituotaa freimreitaa (35fps) sutelpa liuosiai. wo.
+
+***** 98.04.13 *****         236 765 sorsas      egzeko nedaro
+  visas sienas ir flatus sukalkuliuoja, tik truhksta f-jos pieshianchios
+  eilinii sienos stulpelii. daug renderyjymo bugu. nehra keliuu mizernuu
+  f-juu
+
+***** 9?.??.?? *****         ??? ??? sorsas      ??? ??? egzekas
+  nieko dar nepaisho, bet jau viska uzkrauja ir daug ka kalkuliuoja

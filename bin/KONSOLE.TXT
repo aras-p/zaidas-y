@@ -1,0 +1,314 @@
+
+ taigi apie  K O N S O L E, o ne apie nekonsolee
+             =============
+
+zhaidas-y turi panashia komandu konsole kaip ir zhaidimas "quake". ji
+ishkviechiama klavishu '~' (tyldee).
+
+**************************************************************************
+KONSOLES VALDYMAS
+**************************************************************************
+
+apachioje yra promptas (kookis liet.) - simbolis '>'. dar yra zhymeklis.
+ten galima ka nors rashyti, pavyzdzhiui, konsoles komandas. ivykdyti jas
+galima klavishu 'enter', ishtrinti ka parashei - 'backspace'. klavishais
+'rod.aukshtyn' ir 'rod.zhemyn' galima pakartoti seniau suvestas komandas
+(kaip nortone ctrl-x ir ctrl-e). klavishais 'pgup' ir 'pgdown' galima
+perzhiureti teksta, jau nesimatanti ekrane. kaip kad linuxe arba 4dos'e
+galima uzhbaigineti komandas klavishais 'tab' bei 'shift-tab'. pvz: yra
+komandos "map", "move" ir "moveright". jei konsoleje suvesi "mo" ir paspausi
+'tab', tai tau parashys "move". jei dar karta spausi 'tab', tau parashys
+"moveright". tai va.
+vienas 'enter' paspaudimas - tai nebutinai viena komanda. vienoje eiluteje
+galima parashyti keleta komandu, atskirtu kabliatashkiais, ir jos bus
+vykdomos.
+galima rashyti ir komentarus - jie eina visoje eiluteje po "//" arba "#".
+tai pachioje konsoleje nieko neduoda, bet vykdomuose failuose (zr. komanda
+exec) galima prirashyti komentaru.
+
+**************************************************************************
+KONSOLES KINTAMIEJI
+**************************************************************************
+
+kintamieji - tai tokie zoviesai, kurie turi kazhkokia reikshme, kuria tu
+gali pakeisti. jie kaip nors veikia (arba ne) pati zhaidima. kintamojo
+reikshme galima pakeisti taip: parashyti kintamojo varda, o po tarpo -
+reikshme (pvz.: m_pitch -0.022). jei parashysi tik kintamojo varda ir
+mykliai mygsi 'enter', tai jis (zhaidas-y) tau parashys kintamojo reikshme
+(pvz.: "m_pitch" yra "-0.022").
+daba pareina lentele. vardas - tai vardas, tipas - tai tipas (ar floatas,
+ar intas, ar zoviesas), o ka daro tai ka daro.
+
+VARDAS        TIPAS   KA DARO
+use_mouse     0/1     ar naudoti pelee. 0 - nenaudoti 1 - naudoti.
+                      kitur irgi 1 reishkia "taip", o 0 - "nea".
+sensitivity   int     reguliuoja peles jautruma. 15-20 yra normalus,
+                      <15 - lamoms, >40 - kveikeriams. pabandyk kokius 4000.
+                      galima parashyti ir neigiama - ishvis jeega.
+m_pitch       float   vertikalus peles jautrumas. jis priklauso ir nuo
+                      sensitivity. normalus - apie 0.016-0.022 . jei
+                      neigiamas, tai gaunasi invertmouse, jei teigiamas, tai
+                      nesigauna. jei nulis, tai kaip orig. doome.
+deathmatch    int     zhaidimo tinkle tipas. nuo 1 iki 3.
+                      1 - ginklai pasilieka, daiktai pranyxta ir neatsiranda;
+                      2 - viskas pranyxta ir atsiranda (kaip doome);
+                      3 - ginklai pasilieka, daiktai pranyxta ir atsiranda
+                          (kaip kveiko 3 deathmatchaz).
+gamma         int     kokii shviesuma naudoti, nes gali buti per tamsu
+                      shiaip. 0-tamsiausia, 4-shviesiausia, 5-psycho gamma
+                      (negatyvas).
+messages      0/1     ar rodyti praneshimus ("tu paemei rakietas", t.t.)
+showfps       0/1     ar kair. apatiniam kampe rodyti per sekunde supaishomu
+                      kadru kieki. jei ju <16, tai jau prastai. max yra
+                      35, taigi ir ant p100, ir ant pIII-500 bus vistiek
+                      35.0fps.
+nowalls       0/1     ar nepieshti sienu teksturu, o tik viena spalva sienas.
+                      letiems kompams (486, etc.) tai gerai uzhkelia padaromu
+                      kadru kieki, o sako, kad ir patogiau zhaisti - geriau
+                      prieshai matosi.
+noflats       0/1     ar nepieshti grindu teksturu, o tik viena spalva.
+                      zr. nowalls.
+bot_ai        1/2     kox algoritmas botu AI: 1 = originalus randomas,
+                      nuo skilo niekas nepriklauso, 2 = naujas algoritmas,
+                      taiklumas nuo skilo priklauso.
+botskill      0..10   koks botu meistrishkumas (skilas). 0 = lameriai,
+                      10 = nelameriai.
+playerbot     0/1     ar zhaidejas yra ne zhaidejas, o botas, t.y. jis pac
+                      nieko nedaro, uzh ji laxto ir shaudo kompas. taip
+                      galima pamatyti, kaip "protingai" zhaidzhia zhaido-y
+                      botai.
+lookcheat     0/1     shiaip botai tave pamato tik tada, jei botas ir tave
+                      atsisukes yra. jei lookcheat ijungtas, tai botai
+                      tave mato net ir tada, kai tu jiems uzh nugaros.
+weaponcheat   0/1     ar botai ish karto atsiranda su dauguma ginklu ir daug
+                      shoviniu. su weaponcheat idomiau, nes shiaip tai botai
+                      specialiai ginklu nesirenka, nebent netychia.
+jumpcheat     0/1     ar botai gali shokineti nenormaliai aukshtai kartais.
+botsdontfire  0/1     ar botai neshaudo. chia shiaip, jei nori juos ramiai
+                      apzhiureti arba pazhudyti.
+botdebug      0/1     jei tu esi antro AI botas, ar rasho praneshimus, ka
+                      jis (tu) galvoja.
+bobview       0/1     ar vaizdas duodasi aukshtyn/zhemyn einant.
+bobweapon     0/1     ar ginklas duodasi visaip einant.
+drawweapon    0/1     ar pieshti ginkla. shiaip tai geriau nepieshti, nes
+                      daugiau visko matosi ir veikia greichiau. kuris
+                      ijungtas, galima matyti status bare.
+mipwall       0..127  kolkas geriau nenaudoti. neveikia pagal paskirti.
+mipflat       0..63   kolkas geriau nenaudoti. neveikia pagal paskirti.
+notimer       0/1     normaliai - 0. tinkle laikoma, kad jis yra 0. su 1
+                      nevyksta jokia sinchronizacija pagal taimeri - vienas
+                      tikas, vienas kadras ir t.t. taigi zhaidimas
+                      "plaukioja", bet uzhtat galima pazhiureti, kiek fps'u
+                      ishvezha.
+waitretrace   0/1     letiems kompams geriau 0. greitiems (100 MHz) geriau 1.
+                      nustato, ar palaukti vertikalaus retrac'o monitoriuje
+                      priesh sumetant kadra, ar ne. jei 1, tai "lygesnis"
+                      vaizdas judant.
+soundvolume   0..31   garso garsumas
+numchannels   0..16   kiek garsu gali vienu groti. kuo daugiau, tuo
+                      stabdzhiau (bet nezhymiai labai). shiaip mazhdaug
+                      8 jau gerai pakanka.
+stereoreverse 0/1     ar groti normaliai, ar sukeisti kolonkes vietom.
+
+**************************************************************************
+KONSOLES KOMANDOS
+**************************************************************************
+
+komandos gali buti be parametru ("cls"), su vienu ar keliais parametrais.
+parametrai atskiriami tarpais. jei reikiamu parametru neperduodi, tai
+jis dazhniausiai parasho, kiek ir kokiu parametru reikia. dabar butinus
+parametrus rashysiu tarp <> skliaustu, o nebutinus - tarp []. pachiu
+skliaustu rashyti nereikia.
+
+PAREINA LENTELEE:
+
+cls
+    ishvalo viska, kas konsoleje prirashyta. tik shiaip, jei uzhkniso.
+
+alias <vardas> <komandos>
+    padaro fiktyvia komanda <vardas>, kuri ish tikruju daro <komandos>.
+    <komandos> turi buti tarp kabuchiu, jei tai daugiau nei viena komanda.
+      pvz: alias doodas "nowalls 1; noflats 1; echo ar dabar gerai?"
+        dabar jei konsoleje parashysi "doodas", tai jis nustatys
+        kintamuosius nowalls ir noflats ir dar parashys "ar dabar gerai?".
+    galima daryti kintanchius aliasus.
+      pvz: alias aa aa1
+           alias aa1 "echo vienetas; nowalls 1; alias aa aa2"
+           alias aa2 "echo nuliukas; nowalls 0; alias aa aa1"
+        dabar suvedus "aa", jis parashys "vienetas", nustatys nowalls i 1 ir
+        aa pataps aa2. dabar jau suvedus "aa", jis parashys "nuliukas" ir
+        t.t.
+    atsargiai su rekursiniais aliasais - ju nepavezha.
+      pvz: alias aa "echo woohoo!!!; aa"
+        jei parashai "aa", tai jis vis vykdo ir vykdo aa, ir amzhinas ciklas
+        gaunasi.
+
+echo <tekstas>
+    nieko ypatingo, tik parasho teksta <tekstas> i konsolee.
+      pvz: echo doodaj ir groodaj
+
+exec <bylosvardas>
+    'vykdo' bylaa <bylosvardas>. vykdo tai taip: uzhkrauna ir mano, kad
+    ten yra konsolees komandos, atskirtos kabliatashkiais arba kai nukeliama
+    i kita eilute (CR). taip patogu dazhnai naudojamas nekintanchias komandas
+    surashyti i byla. zhaidas-y paleidimo metu pats daro "exec default.cfg"
+    ir "exec autoexec.cfg". pirmojoje surashyti konsoles kintamieji ir ju
+    reikshmes, ir ta byla generuojama automatishkai isheinant ish zhaido-y,
+    taigi jeigu pakeitei koki kintamaji, tai ishsaugo nauja jo reikshme.
+    po to vykdo autoexec.cfg, kuri pati nekinta, ir ten surashytos visos
+    judejimo komandos, t.y. valdymo klavishu nustatymai.
+
+wait [kiektiku]
+    tikas - tai elementarus zhaido-y laiko vienetas, lygus 1/35 sekundes.
+    jei [kiektiku] nenurodytas, tai pagal nutylejima yra vienas.
+    shiaip tai jei suvedei kiek nors konsoles komandu, tai jos ivykdomos
+    prasidedant sekanchiam tikui. jos ivykdomos visos. jei kur nors
+    parashai "wait", tai po "wait" sekanchios komandos bus vykdomos ne dabar,
+    o praejus tiek tiku. shitas gali buti naudojama valdymo klavishu
+    nustatyme, tarkim, kad pakeistu ginkla, ishshautu, palauktu kazhkiek
+    (ish karto tai neishshauna) ir pakeistu i kita ginkla.
+
+help
+    nieko gero nedaro, tik parasho visu konsoles kintamuju ir visu
+    komandu vardus.
+
+quit
+    nu vat isheina ish zhaido-y.
+
+memfree
+    parasho, kiek atminties zhaidas-y ish viso yra ishsiskyres ir kiek
+    dar jos yra laisva, t.y. neishnaudota.
+
+camera
+    perjungineja vaizda tarp zhaidejo akiu ir paskui ji sekiojanchios
+    kameros. geriau nenaudoti, nes ta kamera sekioja bugovai, o be to,
+    nesiteleportuoja su zhaideju kartu.
+
+water [aukshtis]
+    jei aukshtis neduotas, tai jis lygus tu grindu, ant kuriu stovi
+    zhaidejas, aukshchiui + kazhkiek (ar tai 8, ar tai 16). komanda nustato
+    globalu vandens lygi, t.y. vanduo visur yra tokiame aukshtyje. tas vanduo
+    tai nieko nedaro, tik ishkreipia vaizda po savim, stabdo ir net kartais
+    nulauzhia kompa. taigi water komandos geriau nenaudoti.
+
+map <vardas>
+    uzhkrauna zhemelapi ish bylos <vardas>.zdf (".zdf" rashyti _nereikia_).
+    zhaidui-y pasileidus, jis uzhkrauna zhemelapi ish bylos zaidas_y.zdf .
+    che dar bugas - jei vienas tinkle zhemelapi pasikeichia, tai kiti to
+    nezhino ir zhaidzhia toliau, taigi viskas porolinasi ir kas nors nuluzhta.
+    taigi geriau zhaida-y paleisti su kom. eilutes parametru -map ???,
+    kur ???-tai bylos vardas (_su_ priesaga).
+
+addbot [kiek]
+    [kiek] pagal nutylejima lygus 1. prideda [kiek] botu. jei jau nebegalima
+    prideti (daugiau nei 8 ish viso zhaidzhiantys), tai neprideda.
+
+give_weapons
+    jei zhaidi ne tinkle, tai tau duoda visus ginklus bei palieka kazhkiek
+    (nedaug) shoviniu.
+
+give_ammo
+    jei zhaidi ne tinkle, tai tau duoda visu shoviniu tiek, kiek tik
+    daleidzhia (daug).
+
+bind <klavishas> <komanda>
+    shituo nustatomas zhaidimo valdymas. priskiria <klavishui> <komanda>,
+    t.y. kai zhaidimo metu paspaudzhiamas kox nors klavishas, ivykdoma
+    konsoles komanda <komanda>. visi judejimai, shovimai, t.t. irgi yra
+    komandos. uzhrashymo taisykles skiriasi nuo zhaidimo Quake. nei
+    apie klavisha, nei apie komanda _negali_ buti kabuchiu. <komanda>
+    turi buti viena, o ne seka su kabliatashkiais. tachiau komandu seka
+    galima vis delto pribindinti - reikia pasidaryti aliasa ish sekos ir
+    klavishui bindinti aliasa. komandu rashymo taisykles: priesh komanda
+    gali buti pliusas '+', minusas '-' arba nieko. jei nieko, tai paspaudus
+    klavisha, tik viena syki bus ivykdyta ta komanda. jei nori dar syki ja
+    ivykdyti, reikia klavisha atleisti ir vel paspausti. jei priesh komanda
+    yra '+', tai ta komanda bus vykdoma tol, kol bus nuspaustas klavishas,
+    o atleidus klavisha bus vykdoma tokia pat komanda tik su minusu. turi
+    buti tokios komandos - su pliusu ir su minusu. jei aprashai aliasa su
+    pliusu, tai turi ir aprashyti aliasa su minusu, nes kitaip jis sakys,
+    kad tokio nera.
+      pvz.: bind space +jump // paspaudus 'space' shoks
+            alias doodas "echo zoviesas; attack"
+            bind u doodas // paspaudus 'u' sakys "zoviesas" ir shaus
+      klavishu pavadinimai - raidems pachios raides, skaichiams skaichiai,
+    kiti paprasti klavishai - jo simbolis be shifto ('[', '`', '/' ir t.t.).
+    valdymo klavishai uzhsirasho mazhosiomis - space, capslock, enter,
+    tab, escape, numlock, scrolllock, printscr, shift, ctrl, alt, home,
+    uparrow, pgup, leftarrow, rightarrow, end, downarrow, pgdn, ins, del,
+    pause, f1, f2, ..., f12. taip pat yra 3 virtualus klavishai, o ish
+    tikruju tai peles mygtukai - mouse1 (kairysis), mouse2 (deshinysis) ir
+    mouse3 (vidurinis).
+      apie standartines judejimo komandas zr. toliau.
+
+unbind <klavishas>
+    nuima binda nuo <klavisho>, t.y. pribindina jam tushchia komanda.
+
+unbindall
+    atsargiai - daro unbind visiems klavishams.
+
+showbind <klavishas>
+    parodo, kas pribindinta prie <klavisho>
+
+TOLIAU TA PATI LENTELE - JUDEJIMO KOMANDOS
+
+tarkim, "forward" yra ish tikruju 3 komandos "+forward", "forward" ir
+"-forward". +forward ir forward daro _lygiai_ ta pati, o reikalingos tik
+bind'u specifikai (zr. bind). jei jos kazhka daro, tai -forward to _nedaro_.
+che su pliusais ir minusais nerashysiu, nors tokios yra - susigaudysit, ka
+daro. tai va:
+
+forward
+    eina i prieki
+
+backward
+    eina atgal
+
+moveleft
+    eina nesisukdamas i kaire (strafe angl.)
+
+moveright
+    tas pats i deshine.
+
+attack
+    shauna. booo!
+
+jump
+    shoka.
+
+showstats
+    rodo surushiuota pagal galybe fragu lentele su zhaideju spalvomis
+    ir (kolkas) vienodais vardais.
+
+DABAR SHITOS JOKIU PLIUSU AR MINUSU NETURI - PAPRASTOS KOMANDOS
+
+impulse <kas>
+    daro impulsa <kas>, kuris shiuo metu nieko kito negali daryti,
+    tik ginklus perjungineti. atsargiai su impulsais - jei paduosi
+    didesni nei yra ginklu ish viso, tai nulush.
+        0 = granatsvaidis  1 = raketoneshikis  2 = buza  3 = spreadas
+        4 = slaunioji bo(m)belee  5 = kulkosvaidux  6 = dvivamzdis
+        7 = plassma  8 = bfg11000  9 = liepsnosvaidis  10 = kuoka
+
+use
+    bando 'naudoti' prieshais esanchia siena (atidaryti duris, nuleisti
+    lifta ar dar ka nors). jei esi numires, tai prikelia tave.
+
+viewangle <kampas>
+    nustato zhiurejimo kampo nuokrypi nuo tavo savasties kampo laipsniais.
+    shiaip tai buna nulis, t.y. tu zhiuri ten, kur ir atsisukes esi.
+    jei parashysi viewangle -90, tai zhiuresi i kaire. jei dabar eisi i
+    prieki, tai atrodys, kad strafuoji deshinen. jei shausi, tai jis shaus
+    irgi i tavo deshine, nesvarbu, kad ginkla vistiek paisho :)
+    su viewangle -180 galima pasidaryti atbulinio vaizdo "veidrodeli"
+
+viewleft
+    ish tavo viewangle atima dar 3 laipsnius, t.y. pasuka labiau i kaire.
+
+viewright
+    prie viewangle prideda 3 laipsnius.
+
+viewnull
+    atstato normalu vaizda. tas pats, kas "viewangle 0"
+
+{atrodo, viskas}
