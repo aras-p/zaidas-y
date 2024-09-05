@@ -4,7 +4,8 @@ Made in 1998-1999. See https://aras-p.info/projZaidasY.html
 
 I have lost the source code during all the computer moves. 
 
-It works on DosBox these days.
+It works on DosBox these days. Mount the `bin/` folder as a drive, execute
+`main.exe`.
 
 Default controls are:
 - W, A, S, D: forward, backward, strafe left/right
