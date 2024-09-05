@@ -44,6 +44,18 @@ Available maps are (open console via ~, type "map <mapname>" e.g. "map genie"):
 - ice: kinda useless, was for testing "ice" floor material which has very
   low friction.
 
+The game could be played on LAN via IPX, but I completely forgot how to do that.
+Meanwhile, it has some pretty stupid "bots" that you can add. Console commands
+of interest:
+- "addbot <N>" adds N bots, e.g. "addbot 4"
+- "removebot <N>" removes N bots
+- "botsdontfire 1" makes bots never fire
+- "playerbot 1" turns player into a bot!
+
+Other curious console commands:
+- "camera" toggles between first person and (terrible) third person
+- "water" adds water at current player ground level plus a bit. Sometimes makes
+  the game crash :)
 
 Below is original readme in Lithuanian, as it was written in 1999 or so.
 
