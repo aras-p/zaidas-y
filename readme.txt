@@ -1,4 +1,53 @@
 
+Žaidas-Y, a Doom II - like shooter for MS-DOS by Aras Pranckevičius.
+Made in 1998-1999. See https://aras-p.info/projZaidasY.html
+
+I have lost the source code during all the computer moves. 
+
+It works on DosBox these days.
+
+Default controls are:
+- W, A, S, D: forward, backward, strafe left/right
+- Mouse Left: fire
+- Mouse Right: forward
+- Alt: jump
+- Space: use (door etc.)
+- Tab: show stats
+- ~: open console
+- F10: quit
+
+Weapons:
+- 1: club
+- 3: shotgun
+- 4: minigun
+- 5: grenade launcher
+  - T: grenade that explodes into 4 more grenades
+- 6: rocket launcher
+  - Y: launches two rockets, each with slightly random movement
+  - H: launches three rockets
+- U: flame thrower
+- 7: plasma
+- 8: "bfg11000" that looks like a vacuum cleaner
+
+Console cheat commands "give_weapons" and "give_ammo" might be useful.
+
+Available maps are (open console via ~, type "map <mapname>" e.g. "map genie"):
+- zaidas_y: default level. No idea what that is based on, or what is it similar
+  to.
+- genie: very similar to Doom II "genocide.wad"
+- hifrag: very similar to Doom II "hipafrag.wad"
+- lievas: square-shaped map with "wind" feature (pushes players constantly,
+  affects rockets, grenades etc.)
+- zyquad: no idea what that is based on. Maybe there was some Quake level
+  that was similar?
+- ice: kinda useless, was for testing "ice" floor material which has very
+  low friction.
+
+
+Below is original readme in Lithuanian, as it was written in 1999 or so.
+
+-----------------------------------------------------------------------------
+
  taigi apie  R E A D M E , o ne ne apie readme.
              ===========
 
